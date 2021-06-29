@@ -11,7 +11,7 @@ These labs are designed *to be completed in sequence*, and the full set of instr
 
 ## The context
 
-You work for an AWS Partner. Now you have a new customer, **The New Company**, a retail business. One of the main Apps for The New company is a *product catalog*, a web application that they recently migrated to the AWS Cloud from their On-prem environment for **testing** purposes. Even though the Application is functional, The New Company people want to have an architecture with best practices applied because they are planning to go live in **production** in 2 months.  They are looking for an architecture that meet performance requirements, mitigate risks and save money. For them is crucial to use automation. 
+You work for an AWS Partner. Now you have a new customer, **The New Company**, a retail business. One of the main Apps for The New company is a *product catalog*, a web application that they recently migrated to the AWS Cloud from their On-prem environment. Even though the Application is functional, The New Company people want to have an architecture with best practices applied because the business is growing.  They are looking for an architecture that meet the new performance requirements, mitigate risks and save money. For them is crucial to use automation. 
 
 The following is the initial architecture that you have found. Your mission is to improve it applying some of the Well-Architected principles according to the company needs. 
 
@@ -23,7 +23,7 @@ You have proposed to the customer a Well-Architected Framework Review (WAFR) to 
 
 1. They are doing a lot of operational tasks manually. The customer wants to automate the process to have visibility about some important performance metrics, like memory or disk utilization.
 
-1. It is clear for the customer that they need to have a High Available architecture for the production environment. 
+1. It is clear for the customer that they need to have a High Available architecture. 
 
 1. Security is their number 1 priority. The more insights they can have available related to this topic, the better.
 
