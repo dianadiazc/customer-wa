@@ -1,0 +1,7 @@
+# git remote add wellarch git@github.com:dianadiazc/wellarch.git
+# git branch -M main
+# git push -u wellarch main
+
+git add .
+git commit -m "update"
+git push -u wellarch main

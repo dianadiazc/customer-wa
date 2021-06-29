@@ -31,7 +31,7 @@ You have proposed to the customer a Well-Architected Review (WAR) to understand 
 
 1. How much they are going to pay definitely matters. The New Company people want to optimize as much as they can the use of the resources. For instance, before the go live, they would like to automate the process for shutting down resources not needed when they are not working. 
 
-## Target Architecture
+## Target Architecture1
 
 After a Well-Architected Review (WAR), you and The New Company have been defined a Target Architecture. This architecture will help the customer to achieve their initial objectives. You are going to pass through the five Well-Architected pillars to implement the following architecture:
 
