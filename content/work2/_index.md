@@ -22,7 +22,7 @@ Amazon EC2, AWS Systems Manager, Amazon CloudWatch
 
 ## Tasks
 
-1. Checking the existing architecture and test the Application
+1. Checking the existing architecture
 1. Tagging the EC2 instances
 1. Creating a Resource Group
 1. Enabling SSM for EC2 instances

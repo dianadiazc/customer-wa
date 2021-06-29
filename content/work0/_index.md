@@ -19,7 +19,7 @@ The following is the initial architecture that you have found. Your mission is t
 
 ## Architecture review
 
-You have proposed to the customer a Well-Architected Framework Review (WAFR) to understand better the current status and their needs. After that review, you have identified the following insights:
+You proposed to the customer a Well-Architected Framework Review (WAFR) to understand better the current status and their needs. After that review, you identified the some insights, here the most relevant:
 
 1. They are doing a lot of operational tasks manually. The customer wants to automate the process to have visibility about some important performance metrics, like memory or disk utilization.
 
@@ -29,7 +29,9 @@ You have proposed to the customer a Well-Architected Framework Review (WAFR) to 
 
 1. They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. The New Company people want to do some stress tests for the application. 
 
-1. How much they are going to pay definitely matters. The customer is testing other Apps, but some users have launched EC2 instances with optimized resources, when they are not needed. This situation has increased the monthly bill. The New Company people wants to control this situation. 
+1. How much they pay definitely matters. The customer is testing other Apps, but some users have launched EC2 instances with optimized resources, when they are not needed. This situation has increased the monthly bill. The New Company people wants to control this situation. 
+
+The information above is your starting point to help this customer to enhance the architecture and to achieve their objectives. Take into account that you can identify more opportunities for improvement in this architecture, but for the Workshop's purpose we are going to focus on these findings. 
 
 
 ## Target Architecture
