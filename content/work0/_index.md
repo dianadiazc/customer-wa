@@ -19,7 +19,7 @@ The following is the initial architecture that you have found. Your mission is t
 
 ## Architecture review
 
-You have proposed to the customer a Well-Architected Review (WAR) to understand better the current status and their needs. After that review, you have identified the following insights:
+You have proposed to the customer a Well-Architected Framework Review (WAFR) to understand better the current status and their needs. After that review, you have identified the following insights:
 
 1. They are doing a lot of operational tasks manually. The customer wants to automate the process to have visibility about some important performance metrics, like memory or disk utilization.
 
@@ -27,13 +27,14 @@ You have proposed to the customer a Well-Architected Review (WAR) to understand 
 
 1. Security is their number 1 priority. The more insights they can have available related to this topic, the better.
 
-1. They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. 
+1. They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. The New Company people want to do some stress tests for the application. 
 
-1. How much they are going to pay definitely matters. The New Company people want to optimize as much as they can the use of the resources. For instance, before the go live, they would like to automate the process for shutting down resources not needed when they are not working. 
+1. How much they are going to pay definitely matters. The customer is testing other Apps, but some users have launched EC2 instances with optimized resources, when they are not needed. This situation has increased the monthly bill. The New Company people wants to control this situation. 
 
-## Target Architecture1
 
-After a Well-Architected Review (WAR), you and The New Company have been defined a Target Architecture. This architecture will help the customer to achieve their initial objectives. You are going to pass through the five Well-Architected pillars to implement the following architecture:
+## Target Architecture
+
+After a Well-Architected Framework Review (WAFR), you and The New Company have been defined a Target Architecture. This architecture will help the customer to achieve their initial objectives. You are going to pass through the five Well-Architected pillars to implement the following architecture:
 
 <img src="images/target.png" alt="drawing" width="1100"/>
 
@@ -42,11 +43,11 @@ After a Well-Architected Review (WAR), you and The New Company have been defined
 
 This Workshop is made up of five Labs structured around the five pillars of the [Well-Architected Framework](https://aws.amazon.com/well-architected):
 
--   [Operational Excellence](https://wellarchitectedlabs.com/operational-excellence/)
--   [Reliability](https://wellarchitectedlabs.com/reliability/)
--   [Security](https://wellarchitectedlabs.com/security/)
--   [Performance Efficiency](https://wellarchitectedlabs.com/performance-efficiency/)
--   [Cost Optimization](https://wellarchitectedlabs.com/cost/)
+-   [Operational Excellence](https://main.d2azidedm760yt.amplifyapp.com/work2/)
+-   [Reliability](https://main.d2azidedm760yt.amplifyapp.com/work3/)
+-   [Security](https://main.d2azidedm760yt.amplifyapp.com/work4/)
+-   [Performance Efficiency](https://main.d2azidedm760yt.amplifyapp.com/work5/)
+-   [Cost Optimization](https://main.d2azidedm760yt.amplifyapp.com/work6/)
 
 
 
