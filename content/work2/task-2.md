@@ -19,3 +19,4 @@ that can make it easier to manage, search for, and filter resources. Tags are a 
 
 <img src="../images/tag2.png" alt="drawing" width="800"/>
 
+3. Follow steps **1.** and **2.** for the DB server (wa-db-server)

@@ -8,7 +8,7 @@ weight = 1
 
 The product catalog is a Web Application that was recently migrated from On-premises to the AWS Cloud. This is a fundamental application for The New Company customer. Since it was migrated using a simple lift and shift process, into the AWS Cloud this application is made up of two EC2 instances, one for the Web Server and other one for the database (MariaDB). Users access the application through the Internet. 
 
-1. Make sure that your AWS console session is using Oregon region.
+1. Make sure that your AWS console session is using Oregon region (This lab uses us-east-2 as default region).
 
 <img src="../images/region.png" alt="drawing" width="600"/>
 

@@ -14,7 +14,7 @@ Remember that one of the insights found in the Well-Architected Framework Review
 
 ## Objective
 
-In this Lab you will use AWS Systems Manager according to the “Perform operations as code” design principle. You will create a Resource Group with both EC2 instances and use the “Run command” option in SSM to install a CW agent for collecting logs. The tasks in this Lab will guide you through the steps to achive this objective.
+In this Lab you will use AWS Systems Manager according to the **“Perform operations as code”** design principle. You will create a Resource Group with both EC2 instances and use the “Run command” option in SSM to install a CW agent for collecting logs. The tasks in this Lab will guide you through the steps to achive this objective.
 
 ## Services
 
