@@ -6,9 +6,9 @@ chapter = false
 pre = "<b>Lab 5:  </b>"
 +++
 
+The Cost Optimization pillar includes the ability to run systems to deliver business value at the lowest price point.
+
 <img src="images/cost.png" alt="drawing" width="150"/>
-
-
 
 ## Objective
 

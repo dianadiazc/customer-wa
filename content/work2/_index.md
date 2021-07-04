@@ -10,7 +10,9 @@ The Operational Excellence pillar includes the ability to support development an
 
 <img src="images/operational-ex.png" alt="drawing" width="150"/>
 
-Remember that one of the insights found in the Well-Architected Framework Review (WAFR) was about the need to automate tasks. The New Company people are doing a lot of operational taks manually. One of the cases that they mentioned was that they don't have visilibility about some important metrics like memory and disk utilization for the EC2 instances. They would like to automate the process to get that information. 
+{{% notice note %}}
+Remember that one of the insights found in the Well-Architected Framework Review (WAFR) was about the need to automate tasks. **The New Company** people are doing a lot of operational taks manually. One of the cases that they mentioned was that they don't have visilibility about some important metrics like memory and disk utilization for the EC2 instances. They would like to automate the process to get that information. 
+{{% /notice %}}
 
 ## Objective
 
@@ -29,3 +31,5 @@ Amazon EC2, AWS Systems Manager, Amazon CloudWatch
 1. Installing Amazon CloudWatch agent with SSM
 1. Starting Amazon CloudWatch Agent
 1. Validating custom metrics and log groups
+
+

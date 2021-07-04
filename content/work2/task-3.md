@@ -41,7 +41,7 @@ Repeat the process using <code>Environment</code> and <code>Production</code>.
 
 <img src="../images/rg6.png" alt="drawing" width="900"/>
 
-5. Clic on **Preview group resources**. You will see both EC2 instances. Those instance will make up your Resource group.
+5. Click on **Preview group resources**. You will see both EC2 instances. Those instance will make up your Resource group.
 
 <img src="../images/rg7.png" alt="drawing" width="900"/>
 
@@ -51,6 +51,6 @@ Repeat the process using <code>Environment</code> and <code>Production</code>.
 * Group name: <code>rg-wa</code>
 * Group description: <code>Resource Group for Well-Architected Labs</code>
 
-7. Clic on "Create Group". 
+7. Click on "Create Group". 
 
 <img src="../images/rg8.png" alt="drawing" width="900"/>
