@@ -38,9 +38,7 @@ You will see the installation progress for the CloudWatch agent in both EC2 inst
 
 <img src="../images/cw7.png" alt="drawing" width="800"/> 
 
-
-
+{{% notice tip %}}
 Reference: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance-fleet.html
-
 *Section: Download the CloudWatch Agent on an Amazon EC2 Instance Using Systems Manager*
-
+{{% /notice %}}
