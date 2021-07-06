@@ -37,7 +37,7 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 <img src="../images/ip2.png" alt="drawing" width="500"/>
 
-3. Click on "AWS service" and later on "Next: Permissions".
+3. Click on "AWS service", select EC2 and later on "Next: Permissions".
 
 <img src="../images/ip3.png" alt="drawing" width="700"/>
 
@@ -81,10 +81,14 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 11. Scroll down to the bottom page. On *Corresponding managed instances*, you will see your EC2 instances. Now you can use Systems Manager to automate operational tasks on your EC2 instances.
 
-<img src="../images/ip11.png" alt="drawing" width="800"/> 
-
 {{% notice info %}}
 NOTE: After the modification of their instance profiles, it may take up to **5 minutes** for the instances to appear into the managed instances inventory .
+{{% /notice %}}
+
+<img src="../images/ip11.png" alt="drawing" width="800"/> 
+
+{{% notice warning %}}
+If after 5 min you are not able to see the EC2 instances in the inventory, please **reboot** your EC2 instances.
 {{% /notice %}}
 
 

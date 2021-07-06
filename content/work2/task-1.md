@@ -12,7 +12,7 @@ The product catalog is a Web Application that was recently migrated from On-prem
 
 <img src="../images/region.png" alt="drawing" width="600"/>
 
-2. Open the EC2 console. Service search box > ECS
+2. Open the EC2 console. Service search box > EC2
 
 <img src="../images/EC2.png" alt="drawing" width="600"/>
 
@@ -25,6 +25,10 @@ You will see two EC2 instances, one for the web server and other one for the dat
 <img src="../images/dns.png" alt="drawing" width="600"/>
 
 4. Paste the public DNS in a web browser. You will see that the Product Catalog web application. 
+
+{{% notice info %}}
+Please make sure that you are using **http** to access the Application, some browsers use *https* by default
+{{% /notice %}}
 
 <img src="../images/app.png" alt="drawing" width="600"/>
 
