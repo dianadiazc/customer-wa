@@ -14,8 +14,8 @@ that can make it easier to manage, search for, and filter resources. Tags are a 
 
 2.  Select **Add tags** option. You are going to add 2 tags. These tags will be used in the task.
 
-* Tag 1:  Key: type <code>environment</code>, Value: <code>production</code>
-* Tag 2:  Key: type <code>application</code>, Value: <code>product-catalog</code>
+* Tag 1:  Key: type <code>Environment</code>, Value: <code>Production</code>
+* Tag 2:  Key: type <code>Application</code>, Value: <code>Product-Catalog</code>
 
 <img src="../images/tag2.png" alt="drawing" width="800"/>
 
