@@ -27,7 +27,7 @@ You proposed to the customer a Well-Architected Framework Review (WAFR) to under
 
 1. Security is their number 1 priority. The more insights they can have available related to this topic, the better.
 
-1. They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. The New Company people want to do some stress tests for the application. 
+1. They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. The New Company people want to do some stress tests for the application, especially because they are expecting an increase in the demand application in the near future.
 
 1. How much they pay definitely matters. The customer is testing other Apps, but some users have launched EC2 instances with optimized resources, when they are not needed. This situation has increased the monthly bill. The New Company people wants to control this situation. 
 
