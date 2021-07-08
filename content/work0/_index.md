@@ -21,7 +21,7 @@ The following is the initial architecture that you have found. Your mission is t
 
 You proposed doing a Well-Architected Framework Review (WAFR) of the customer’s environment to better understand the current status and their needs. After that review, you identified some insights, the most relevant of which are listed below:
 
-1. They are performing a lot of operational tasks manually. The customer wants to automate the process to provide visibility into some important performance metrics, like memory or disk utilization.
+1. They are performing a lot of operational tasks manually. The customer wants to automate the process to provide visibility into some important performance metrics, like memory or disk utilization. Additionally, they need a centralized log monitoring for DB and App. 
 
 2.	It is clear for the customer that they need to have a highly available architecture.
 3.	Security is their number 1 priority. The more insights they can have available related to this topic, the better.

@@ -10,7 +10,7 @@ You can use resource groups to perform bulk actions. For example, if you manage 
 
 * Applying updates or security patches.
 * Upgrading an application version.
-* **Installing software** *(This is the action that we are going to use in this lab).*
+* **Installing software** *(This is the action that we are going to perform in this lab).*
 * Opening or closing ports to network traffic.
 * Collecting specific log and monitoring data.
 

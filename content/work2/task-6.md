@@ -100,7 +100,7 @@ This is the JSON agent configuration file stored in SSM Parameter store. Please 
 
 5. Click on **Run**
 
-You will see the *Run Command* result. Use the refresh option to get the *Success* status. Now you have installed CloudWatch agent on both EC2 instances using "Perform Operations as Code" desing principle. 
+You will see the Run Command result. Use the refresh option to update the status until it displays Success. You have now installed and started the CloudWatch agent on both EC2 instances using the “Perform Operations as Code” design principle.
 
 <img src="../images/rc5.png" alt="drawing" width="800"/> 
 

@@ -34,7 +34,7 @@ The CloudWatch agent monitors activity on your EC2 instance to collect logs and 
 
 6. Click on **Run**
 
-You will see the installation progress for the CloudWatch agent in both EC2 instances. Just wait some seconds and refresh your browser. You will see the status as *Success*.
+You will see the installation progress for the Amazon CloudWatch agent in both EC2 instances. Just wait a few seconds and then refresh your browser. You will see the status indicate *Success*.
 
 <img src="../images/cw7.png" alt="drawing" width="800"/> 
 

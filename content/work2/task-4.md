@@ -56,7 +56,7 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 ## Modifying EC2 instance profiles
 
-6. Go to **EC2** console and select the *wa-web-server* instance. Click on **Actions** -> **Security** -> **Modify instance role**
+6. Go to **EC2** console and select the *wa-web-server* instance. Click on **Actions** -> **Security** -> **Modify IAM role**
 
 <img src="../images/ip7.png" alt="drawing" width="1000"/>
 
@@ -75,20 +75,20 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 <img src="../images/ip9.png" alt="drawing" width="800"/> 
 
-10. Just to make sure that your EC2 instances are correctly configured for Systems Manager, go to *Inventory* in the right panel.
+10. To ensure that your EC2 instances are correctly configured for Systems Manager, go to Inventory in the left panel.
 
 <img src="../images/ip10.png" alt="drawing" width="800"/> 
 
-11. Scroll down to the bottom page. On *Corresponding managed instances*, you will see your EC2 instances. Now you can use Systems Manager to automate operational tasks on your EC2 instances.
+11. Scroll down to the bottom page. On *Corresponding managed instances*, you will see your Amazon EC2 instances. Now you can use Systems Manager to automate operational tasks on your EC2 instances.
 
 {{% notice info %}}
-NOTE: After the modification of their instance profiles, it may take up to **5 minutes** for the instances to appear into the managed instances inventory .
+NOTE: After modifying the instance profiles, it may take up to 5 minutes for the instances to appear in the managed instances inventory.
 {{% /notice %}}
 
 <img src="../images/ip11.png" alt="drawing" width="800"/> 
 
 {{% notice warning %}}
-If after 5 min you are not able to see the EC2 instances in the inventory, please **reboot** your EC2 instances.
+If after 5 minutes you are still unable to see the EC2 instances in the inventory, please reboot your EC2 instances.
 {{% /notice %}}
 
 
