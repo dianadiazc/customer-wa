@@ -12,7 +12,7 @@ The reliability pillar encompasses the ability of a workload to perform its inte
 
 ## Objective
 
-Text 
+
 
 ## Services
 
