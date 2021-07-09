@@ -1,5 +1,5 @@
 +++ 
-title = "Task 1: Enable granular logging to see everything in your AWS environment" 
+title = "Task 1: Enable granular logging" 
 chapter = false 
 weight = 1 
 +++
