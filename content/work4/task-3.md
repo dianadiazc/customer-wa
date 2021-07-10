@@ -10,7 +10,7 @@ Security Groups are awesome at allowing access, but in **VPC** Services, **Ne
 
 1. Go to **VPC** service.
 
-<img src="../images/nacl1.png" alt="drawing" width="600"/>
+<img src="../images/nacl1.png" alt="drawing" width="800"/>
 
 2. In the left pane, select **Network ACLs**.
 
@@ -18,7 +18,7 @@ Security Groups are awesome at allowing access, but in **VPC** Services, **Ne
 
 3. Click on **Create network ACL**.
 
-<img src="../images/nacl3.png" alt="drawing" width="600"/>
+<img src="../images/nacl3.png" alt="drawing" width="800"/>
 
 4. For **Name**, use `LoadBalancerIsolation`. For **VPC**, select `wa-lab-vpc`. Click on **Create network ACL**.
 
@@ -26,11 +26,11 @@ Security Groups are awesome at allowing access, but in **VPC** Services, **Ne
 
 5. Click on the Network ACL ID that you created in the previous step.
 
-<img src="../images/nacl5.png" alt="drawing" width="600"/>
+<img src="../images/nacl5.png" alt="drawing" width="900"/>
 
 4.  Select **Outbound Rule** option and later **Editing Outbound Rules**
 
-<img src="../images/nacl6.png" alt="drawing" width="600"/>
+<img src="../images/nacl6.png" alt="drawing" width="800"/>
 
 5.  **Adding Rules** like these would block whatever Subnet you apply this to from talking to the Database Subnets but still allow access to the rest of the network. Note that NACLs are evaluated in the specific order of their Rule #.
 
@@ -51,7 +51,7 @@ Security Groups are awesome at allowing access, but in **VPC** Services, **Ne
 
 Click on **Add new rule**, add information per rule and click on **Save changes**
 
-<img src="../images/nacl7.png" alt="drawing" width="900"/>
+<img src="../images/nacl7.png" alt="drawing" width="1000"/>
 
 6.  After **Saving** you need to allow access to that subnet from the internet, so recreating the **All Traffic Allow** rule for **Inbound Rules** is necessary. 
 
@@ -62,19 +62,19 @@ Click on **Add new rule**, add information per rule and click on **Save changes*
 
 Select **Inbound rules** and **Edit inbound rules**.
 
-<img src="../images/nacl8.png" alt="drawing" width="700"/>
+<img src="../images/nacl8.png" alt="drawing" width="800"/>
 
 7. Click on **Add rule**, type the information above for the rule and click on **Save changes**.
 
-<img src="../images/nacl9.png" alt="drawing" width="700"/>
+<img src="../images/nacl9.png" alt="drawing" width="800"/>
 
 8.  After **Saving** you need to use **Subnet Associations** to **Edit Subnet Associations**.
 
-<img src="../images/nacl10.png" alt="drawing" width="700"/>
+<img src="../images/nacl10.png" alt="drawing" width="800"/>
 
 9.  Here you have to Associate with the **wa-public-subnet-1** and **wa-public-subnet-2**. Select both subnets and **Save changes**.
 
-<img src="../images/nacl11.png" alt="drawing" width="900"/>
+<img src="../images/nacl11.png" alt="drawing" width="1000"/>
 
 {{% notice note %}}
 Now, you've effectively ensured that if the Load Balancers in your environment misbehave, they can't communicate with or compromise the Database servers directly. But there was no additional hardware, firewall, or complex routing required to make this simple change in the simple network topology.

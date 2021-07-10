@@ -24,10 +24,15 @@ AWS CloudTrail, AWS Config, Amazon VPC, Systems Manager
 
 ## Tasks
 
-1.	Enable granular logging
-1.	Improve granular control of communication
-1.	Improve granular network-based controls
-1.	Evaluate detailed logging capabilities
-1.	Evaluate network-based protections
-1.	Minimize admin access risk
+1.	[Enable granular logging](https://main.d2azidedm760yt.amplifyapp.com/work4/task-1/)
+1.	[Improve granular control of communication](https://main.d2azidedm760yt.amplifyapp.com/work4/task-2/)
+1.	[Improve granular network-based controls](https://main.d2azidedm760yt.amplifyapp.com/work4/task-3/)
+1.	[Evaluate detailed logging capabilities](https://main.d2azidedm760yt.amplifyapp.com/work4/task-4/)
+1.	[Evaluate network-based protections](https://main.d2azidedm760yt.amplifyapp.com/work4/task-5/)
+1.	[Minimize admin access risk](https://main.d2azidedm760yt.amplifyapp.com/work4/task-6/)
 
+## Architecture
+
+After completing tasks above, you will have the following architecture.
+
+<img src="images/Lab3.png" alt="drawing" width="1200"/>

@@ -24,12 +24,18 @@ Amazon EC2, AWS Systems Manager, Amazon CloudWatch
 
 ## Tasks
 
-1. Checking the existing architecture
-1. Tagging the Amazon EC2 instances
-1. Creating a Resource Group
-1. Enabling SSM for Amazon EC2 instances
-1. Installing Amazon CloudWatch agent with SSM
-1. Starting Amazon CloudWatch Agent
-1. Validating custom metrics and log groups
+1. [Checking the existing architecture](https://main.d2azidedm760yt.amplifyapp.com/work2/task-1/)
+1. [Tagging the Amazon EC2 instances](https://main.d2azidedm760yt.amplifyapp.com/work2/task-2/)
+1. [Creating a Resource Group](https://main.d2azidedm760yt.amplifyapp.com/work2/task-3/)
+1. [Enabling SSM for Amazon EC2 instances](https://main.d2azidedm760yt.amplifyapp.com/work2/task-4/)
+1. [Installing Amazon CloudWatch agent with SSM](http://localhost:8080/work2/task-5/)
+1. [Starting Amazon CloudWatch Agent](https://main.d2azidedm760yt.amplifyapp.com/work2/task-6/)
+1. [Validating custom metrics and log groups](https://main.d2azidedm760yt.amplifyapp.com/work2/task-7/)
+
+## Architecture
+
+After completing tasks above, you will have the following architecture. 
+
+<img src="images/Lab1.png" alt="drawing" width="1000"/>
 
 

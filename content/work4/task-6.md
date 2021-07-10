@@ -16,7 +16,7 @@ Finally, let's further reduce administrative risks by reducing access and improv
 
 3. Check the **Inbound Rules**. There is no rule to access the instances using SSH protocol (Port 22) 
 
-<img src="../images/ssm3.png" alt="drawing" width="600"/>
+<img src="../images/ssm3.png" alt="drawing" width="800"/>
 
 4.  But with no access, how can we monitor or log into the box if we need to? Our **Service** called **Systems Manager** can help there. You are already familiar with this service because you used it in Lab 1.
 

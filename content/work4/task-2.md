@@ -15,25 +15,25 @@ Let's review and improve upon granular control of communication between workload
 
 3. Checking the **Outbound rules**, we see the servers can talk to a range of IP’s, 65,536 to be precise. But there are only maybe 6-8 servers that they actually need to talk to. We can start reducing that number editing the Destination rule. 
 
-<img src="../images/sg3.png" alt="drawing" width="700"/>
+<img src="../images/sg3.png" alt="drawing" width="900"/>
 
 4. Go to **Edit Outbound rules** and **delete** the existing rule.
 
-<img src="../images/sg5.png" alt="drawing" width="700"/>
+<img src="../images/sg5.png" alt="drawing" width="800"/>
 
-<img src="../images/sg6.png" alt="drawing" width="700"/>
+<img src="../images/sg6.png" alt="drawing" width="800"/>
 
 5. Select **Add rule**.
 
-<img src="../images/sg7.png" alt="drawing" width="700"/>
+<img src="../images/sg7.png" alt="drawing" width="800"/>
 
 6. For **Type**, select *"All Trafic"*. For **Destination**, look for the Security Group name **wa-web-server-dg** and select it. Click on **Save rule**.
 
-<img src="../images/sg9.png" alt="drawing" width="700"/>
+<img src="../images/sg9.png" alt="drawing" width="900"/>
 
 7. You will see the **Destination** of the rule now shows the Security Group you selected.
 
-<img src="../images/sg10.png" alt="drawing" width="700"/>
+<img src="../images/sg10.png" alt="drawing" width="800"/>
 
 You can **repeat** this by **Editing** and **Adding Rules** for each security group you want to allow access to.
 
