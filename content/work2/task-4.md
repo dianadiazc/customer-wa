@@ -88,7 +88,7 @@ NOTE: After modifying the instance profiles, it may take up to 5 minutes for the
 <img src="../images/ip11.png" alt="drawing" width="800"/> 
 
 {{% notice warning %}}
-If after 5 minutes you are still unable to see the EC2 instances in the inventory, please reboot your EC2 instances.
+If after 5 minutes you are still unable to see the EC2 instances in the inventory, please stop and restart your EC2 instances.
 {{% /notice %}}
 
 

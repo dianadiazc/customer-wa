@@ -4,20 +4,33 @@ chapter = false
 weight = 6 
 +++
 
-Let's review and improve upon granular control of communication between workloads in the cloud.
+Finally, let's further reduce administrative risks by reducing access and improving logging. With our current setup, there is still a risk of open administrative ports, right? It's a bigger risk if those ports are open to the internet and a smaller risk if open internally for malware to find. Can we find a way around this requirement?
 
-1. Looking at the granular control of system-to-system communication used to be difficult. Now, looking at your **EC2** Service **Security Groups** allows you to quickly see who can talk to whom.
+1.  Let's go back to **VPC** and **Security Groups**.
+2.  Open the **Services Server Security Group** and the **Inbound Rules**.
+3.  Now, despite the fact that those are made up IPs, you are going to **Edit Rules** and delete all the rules (Click the x on the right). Then **Save** and **Close**.
+4.  But with no access, how can we monitor or log into the box if we need to? Our **Service** called **Systems Manager** can help there.
+5.  Systems Manager has a feature called **Session Manager** worth checking out.
+6.  At **Sessions**, you can **Start a session** with any server with the SSM agent and access to the SSM Service.
+7.  We disabled all access to the **Services Server for AZ1**, yet there it is. Let's select it and **Start session**.
+8.  Is this a console? For the AWS server? Let's find out.\
+    Type:
 
-2. Picking a Security Group like the **Services Server Security Group** we can see the more traditional way of doing things.
+    >  TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"`
+    >  curl -H "X-aws-ec2-metadata-token: $TOKEN"  http://169.254.169.254/latest/meta-data/instance-id
 
-3. Checking the **Outbound** rules, we see the servers can talk to a range of IP’s, 65,536 to be precise. But there are only maybe 6-8 servers that they actually need to talk to.
+    Does that instance ID look familiar?
 
-4. Well, if we copy the **GroupID** of the **PoC Web Server Security Group** we can start to reduce that number
+    >  curl -H "X-aws-ec2-metadata-token: $TOKEN"  http://169.254.169.254/latest/meta-data/security-groups
 
-5. **Edit** the **Outbound** set of rules for the **Services Server Security Group** and replace the 10.0.0.0/16 with the Security Group name you copied.
+    That looks like the Security Group we modified doesn't it?
 
-6. **Save** this and you’ll see the **Destination** of the rule now shows the Security Group you listed.
+    >  ping 8.8.8.8
 
-7. You can **repeat** this by **Editing** and **Adding Rules** for each security group you want to allow access to.
+    Should it work?
 
-In doing this, you’ve reduced the scope of internal traffic communication from 65,636 host down to 8. Additionally, if you ever need to stand up more servers in these groups, they would be automatically accessible without intervention, as long as you put them in the same Security Group. On premise, you would either need to have Firewalls between all internal VLAN’s, Routers, and sites or complex Network ACL’s on every switch in your environment. This reduces the risk of threats, the risk of misconfiguration, and the operational burden all at once.
+    >  curl -H "X-aws-ec2-metadata-token: $TOKEN"  http://169.254.169.254/latest/meta-data/iam/security-credentials/SharedServerConnectivityRole
+
+    Sure looks like an AWS server.
+
+Congratulations! You have successfully set up this AWS environment for strong logging with Cloudtrail and Config, granular communication with Security Groups and NACLs, intelligent threat detection with AWS GuardDuty, and configured your machines to have safe administrative access without requiring access from the public internet.
