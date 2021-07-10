@@ -10,9 +10,13 @@ The Security pillar encompasses the ability to protect data, systems, and assets
 
 <img src="images/sec.png" alt="drawing" width="150"/>
 
+{{% notice note %}}
+Security is the number 1 priority for The New Company customer . According to the Well-Architected Framework Review (WAFR), you as an AWS Partner recommend to implement some cloud native controls to prevent and detect security issues. 
+{{% /notice %}}
+
 ## Objective
 
-In this hands-on activity, you will identify which cloud-native solutions can mitigate the risks while providing scalability, reliability, and cost optimization at a low operational burden. During this Lab, you will learn how to use cloud native controls like CloudTrail, Security Groups, GuardDuty* and Systems Manager, to secure the cloud architecture. 
+In this hands-on activity, you will identify which cloud-native solutions can mitigate the risks while providing scalability, reliability, and cost optimization at a low operational burden. During this Lab, mainly you will apply the **Enable traceability** desing principle, learning how to use cloud native controls like CloudTrail, Security Groups, GuardDuty and Systems Manager, to secure the cloud architecture. 
 
 ## Services
 

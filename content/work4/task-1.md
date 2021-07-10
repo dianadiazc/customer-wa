@@ -80,9 +80,15 @@ You can close the Welcome box that it is open after the Confirmation.
 
 <img src="../images/ct11.png" alt="drawing" width="600"/>
 
-12. After **Getting Started** we can quickly enable this service with just one click. It’s that easy. We'll check out what GuardDuty monitoring is later.
+12. After **Getting Started** we can quickly enable this service with just one click. It’s that easy. 
 
 <img src="../images/ct12.png" alt="drawing" width="600"/>
+
+13. We are going to **Enable GuardDuty** 30 day free trial. 
+
+<img src="../images/ct16.png" alt="drawing" width="600"/>
+
+We'll check out what GuardDuty monitoring is later.
 
 {{% notice note %}}
 When we looked at on-premises environment we identified that disjointed security tooling, lack of insight into what’s going on in the environment, and difficulty managing change control and permissions in the environment all led to risks becoming problems pretty fast. With the services we just enabled, we’ll see how we now have complete insight into who’s doing what in the environment, what changes are being made, and if and when problems start to arise.

@@ -16,7 +16,7 @@ Remember that one of the insights found in the Well-Architected Framework Review
 
 ## Objective
 
-In this Lab, you will use AWS Systems Manager according to the “Perform operations as code” design principle. You will create a Resource Group with both Amazon EC2 instances and use the “Run command” option in SSM to install the Amazon CloudWatch agent for collecting logs and getting some additional metrics. The tasks in this Lab will guide you through the steps to achieve this objective.
+In this Lab, you will use AWS Systems Manager according to the **“Perform operations as code”** design principle. You will create a Resource Group with both Amazon EC2 instances and use the “Run command” option in SSM to install the Amazon CloudWatch agent for collecting logs and getting some additional metrics. The tasks in this Lab will guide you through the steps to achieve this objective.
 
 ## Services
 

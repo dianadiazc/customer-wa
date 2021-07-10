@@ -27,7 +27,7 @@ Let's review and improve upon granular control of communication between workload
 
 <img src="../images/sg7.png" alt="drawing" width="700"/>
 
-6. For **Destination**, look for the Security Group name **wa-web-server-dg** and select it. Click on **Save rule**.
+6. For **Type**, select *"All Trafic"*. For **Destination**, look for the Security Group name **wa-web-server-dg** and select it. Click on **Save rule**.
 
 <img src="../images/sg9.png" alt="drawing" width="700"/>
 
