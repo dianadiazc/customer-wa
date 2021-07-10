@@ -35,7 +35,7 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 2. Click on **Role** and later on **Create Role**
 
-<img src="../images/ip2.png" alt="drawing" width="500"/>
+<img src="../images/iam1.png" alt="drawing" width="700"/>
 
 3. Click on "AWS service", select EC2 and later on "Next: Permissions".
 

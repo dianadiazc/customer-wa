@@ -11,7 +11,7 @@ The Operational Excellence pillar includes the ability to support development an
 <img src="images/operational-ex.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-Remember that one of the insights found in the Well-Architected Framework Review (WAFR) was about the need to automate tasks. The New Company people are performing a lot of operational tasks manually. One of the issues they mentioned was a lack of visilibility into important metrics like memory and disk utilization for the Amazon EC2 instances. They would like an automated process to get that information. Additionally, they need a centralized log monitoring for the DB and App instances. 
+Remember that one of the insights found in the Well-Architected Framework Review (WAFR) was about the need to automate tasks. The New Company people are performing a lot of operational tasks manually. One of the issues they mentioned was a lack of visibility into important metrics like memory and disk utilization for the Amazon EC2 instances. They would like an automated process to get that information. Additionally, they need a centralized log monitoring for the DB and App instances. 
 {{% /notice %}}
 
 ## Objective

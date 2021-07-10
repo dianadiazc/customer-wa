@@ -26,7 +26,7 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
 
 5. (optional) You can check memory utilization for your EC2 instances.
 
-6. 6.	We are going to navigate through log groups. Go to **Logs** in the navigation pane and then click on Log groups. You will see 4 new **Log groups** where you can view the events happening in your instances’ operating system and applications (Apache and MariaDB).
+6. We are going to navigate through log groups. Go to **Logs** in the navigation pane and then click on Log groups. You will see 4 new **Log groups** where you can view the events happening in your instances’ operating system and applications (Apache and MariaDB).
 
 * db_general_query_log
 * httpd_access_log
