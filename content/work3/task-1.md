@@ -70,7 +70,7 @@ export publicRt=`aws ec2 describe-route-tables --filters Name=tag:Name,Values=wa
 export privateRt=`aws ec2 describe-route-tables --filters Name=tag:Name,Values=wa-private-rt --query 'RouteTables[*].RouteTableId' --output text --region us-west-2`
 ```
 
-10. Add a new private subnet and a public subnet as env vars.
+10. Add a new private subnet and a public subnet as environment variables.
 
 ```sh
 export publicSubnetId=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-public-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2`
