@@ -27,7 +27,7 @@ The CloudWatch agent monitors activity on your EC2 instance to collect logs and 
 
 5. In the *Targets* area:
 
-* For Targets opion, select "Choose a resource group"
+* For Targets option, select "Choose a resource group"
 * For Resource group, select `rg-wa` (This was the resource group that you created in the Task 3)
 
 <img src="../images/cw5.png" alt="drawing" width="700"/> 

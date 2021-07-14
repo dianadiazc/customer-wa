@@ -21,3 +21,7 @@ Text
 ## Tasks
 
 Text
+
+## Architecture
+
+<img src="images/target-up.png" alt="drawing" width="1200"/>

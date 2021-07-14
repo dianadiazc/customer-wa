@@ -15,7 +15,7 @@ You work for an AWS Partner, and have a new customer, The New Company, which is 
 
 The following is the initial architecture that you have found. Your mission is to improve upon it by applying some of the Well-Architected principles, according to the company’s needs.
 
-<img src="images/starting-point.png" alt="drawing" width="600"/>
+<img src="images/starting.png" alt="drawing" width="600"/>
 
 ## Architecture review
 
@@ -34,7 +34,7 @@ The information above is your starting point to help this customer enhance the a
 
 After a Well-Architected Framework Review (WAFR), you and The New Company have defined a target architecture. This architecture will help the customer achieve their initial objectives. You are going to utilize the five Well-Architected pillars to implement the following architecture:
 
-<img src="images/target.png" alt="drawing" width="1100"/>
+<img src="images/target-up.png" alt="drawing" width="1200"/>
 
 
 ## Labs:

@@ -4,7 +4,7 @@ chapter = false
 weight = 1 
 +++
 
-<img src="../images/starting-point.png" alt="drawing" width="600"/>
+<img src="../images/starting.png" alt="drawing" width="600"/>
 
 The product catalog is a web application that was recently migrated from on-premises to the AWS Cloud. This is a fundamental application for The New Company customer. Since it was migrated using a simple lift and shift process into the AWS Cloud, this application consists of two Amazon EC2 instances, one for the Web Server and other for the database (MariaDB). Users access the application via the Internet.
 

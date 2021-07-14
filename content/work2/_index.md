@@ -22,6 +22,10 @@ In this Lab, you will use AWS Systems Manager according to the **“Perform oper
 
 Amazon EC2, AWS Systems Manager, Amazon CloudWatch
 
+## Prerequisites
+
+You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
+
 ## Tasks
 
 1. [Checking the existing architecture](https://main.d2azidedm760yt.amplifyapp.com/work2/task-1/)
@@ -36,6 +40,6 @@ Amazon EC2, AWS Systems Manager, Amazon CloudWatch
 
 After completing tasks above, you will have the following architecture. 
 
-<img src="images/Lab1.png" alt="drawing" width="1000"/>
+<img src="images/Lab-1.png" alt="drawing" width="1000"/>
 
 
