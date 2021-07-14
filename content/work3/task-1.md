@@ -8,7 +8,9 @@ Remember the starting point architecture:
 
 <img src="../images/starting.png" alt="drawing" width="500"/>
 
-In this task, you will create two additional subnets in a second Availability Zone to improve application reliability. At the end of this task this will be the lab architecture:
+In this task, you will create **two additional subnets in a second Availability Zone** to improve application reliability. We can improve availability for applications by using two Availability Zones for our deployment and by separating the applications to separate tiers. We will use services that work across multiple Availability Zones, such as Elastic Load Balancing, Auto Scaling and Amazon RDS Multi-AZ. This will ensure tolerance to failures on the resource level and on theAvailability Zone level. 
+
+At the end of this task this will be the lab architecture:
 
 <img src="../images/lab2-task1.png" alt="drawing" width="600"/>
 
