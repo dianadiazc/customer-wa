@@ -35,10 +35,7 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
 
 <img src="../images/lg5.png" alt="drawing" width="800"/> 
 
-
-7. Now access the application web server using the public DNS or IP, make some inserts to update the database.
-
-<img src="../images/lg6.png" alt="drawing" width="800"/> 
+7. Now access the application web server using the public DNS or IP. 
 
 8. Go back to **CloudWatch logs** -> **Log groups** -> **httpd_access_log** -> Click on the log stream and you will see your public IP listed (use https://www.whatismyip.com)
 
@@ -46,10 +43,9 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
 
 <img src="../images/lg8.png" alt="drawing" width="1000"/> 
 
-9. Now go to **db_general_query_log** -> Click on the log stream and you will see logged the database inserts you just made.
+You could take a look at other Log groups as well.
 
-<img src="../images/lg9.png" alt="drawing" width="1000"/> 
-
+---
 
 You have finished this first Lab. Awesome, right? :)
 

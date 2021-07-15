@@ -31,7 +31,7 @@ You will use Systems Manager in this Lab, therefore it is strongly recommended t
 ## Tasks
 
 1. Adding subnets to a second AZ
-2. Adding RDS subnets to both AZs
+2. Deploying Amazon RDS using multi-AZ
 3. Updating SSM Parameter Store database
 4. Creating an Application Load Balancer and a Target Group
 5. Database migration with SSM Run Command

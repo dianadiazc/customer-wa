@@ -1,10 +1,12 @@
 +++ 
-title = "Task 7: Create Auto Scaling Group"
+title = "Task 7: Creating an EC2 Auto Scaling Group"
 chapter = false 
 weight = 7
 +++
 
-End of task architecture
+An **Auto Scaling group** contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management. Amazon EC2 Auto Scaling enables you to take advantage of the safety and reliability of geographic redundancy by spanning Auto Scaling groups across multiple Availability Zones within a Region. 
+
+After completing the steps in this Task, you will have the architecture in the following diagram:
 
 <img src="../images/lab2-task7.png" alt="drawing" width="800"/>
 
@@ -20,8 +22,14 @@ export waLaunchTemplate=`aws ec2 describe-launch-templates --launch-template-nam
 aws autoscaling create-auto-scaling-group --auto-scaling-group-name "waAutoscaleGroup" --launch-template LaunchTemplateId=$waLaunchTemplate --min-size "2" --max-size "4" --target-group-arns $waTg --vpc-zone-identifier "$asgSubnet1Id,$asgSubnet2Id"
 ```
 
-2. Go to EC2 and validate a couple of new instances are being created
+2. Go to **EC2** service and validate that a couple of new instances are being created.
 
-3. Paste the ELB DNS name in a web browser to test the application
+<img src="../images/ssm7.png" alt="drawing" width="800"/>
 
+3. From the left pane, select **Load Balancers** and click on **DNS name** icon. 
 
+<img src="../images/dns2.png" alt="drawing" width="800"/>
+
+4. Paste the ELB DNS name in a web browser to test the application.
+
+<img src="../images/app1.png" alt="drawing" width="800"/>

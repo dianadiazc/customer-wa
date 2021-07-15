@@ -60,5 +60,5 @@ aws ec2 authorize-security-group-ingress --group-id $rdsSg --source-group $ec2Db
 aws rds create-db-instance --db-name "WaRdsDb" --db-instance-identifier "waDbInstance" --allocated-storage 20 --db-instance-class db.t3.micro --engine "mariadb" --master-username "masteruser" --master-user-password "WaStr0ngP4ssw0rd" --vpc-security-group-ids $rdsSg --db-subnet-group-name "wa-rds-subnet-group" --multi-az --no-publicly-accessible --backup-retention-period 0
 ```
 {{% notice info %}}
-Multi-AZ RDS creation will take **~10-15 minutes**. Please go ahead and continue with the next task.
+Multi-AZ RDS creation will take **~10-15 minutes**. Please go ahead and continue with the next task. 
 {{% /notice %}}

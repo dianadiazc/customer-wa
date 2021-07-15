@@ -16,6 +16,7 @@ After performing steps in this Lab, you have the following architecture:
 
 ```sh
 aws ec2 create-security-group --description "ALB Security group" --group-name "wa-alb-sg" --vpc-id $VPC
+
 export albSg=`aws ec2 describe-security-groups --filters Name=group-name,Values=wa-alb-sg --query 'SecurityGroups[*].GroupId' --output text --region us-west-2`
 
 aws ec2 authorize-security-group-ingress --group-id $albSg --protocol "tcp" --port "80" --cidr "0.0.0.0/0"
@@ -35,6 +36,7 @@ aws elbv2 create-load-balancer --name "waAlb" --subnets $albSubnet1Id $albSubnet
 
 ```sh
 aws elbv2 create-target-group --name "waAutoscale-tg" --protocol "HTTP" --port 80 --vpc-id $VPC --target-type "instance"
+
 export waTg=`aws elbv2 describe-target-groups --names waAutoscale-tg --query 'TargetGroups[*].TargetGroupArn' --output text --region us-west-2`
 ```
 
