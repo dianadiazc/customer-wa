@@ -1,5 +1,5 @@
 +++ 
-title = "Task 9: Nuking the web-app"
+title = "Task 9: Testing reliability"
 chapter = false 
 weight = 9
 +++
@@ -22,4 +22,6 @@ aws rds reboot-db-instance --db-instance-identifier "waDbInstance" --force-failo
 
 4. Also monitor the amount of time the application takes to go back online after RDS failover
 
-### LAB END
+-----
+
+Congrats :). You have finished the second Lab of this workshop!

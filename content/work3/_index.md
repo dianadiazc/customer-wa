@@ -38,7 +38,7 @@ You will use Systems Manager in this Lab, therefore it is strongly recommended t
 6. Creating Launch Template
 7. Create Auto Scaling Group
 8. Creating Route 53 health check
-9. Nuking the web-app
+9. Testing reliability
 
 ## Architecture
 
