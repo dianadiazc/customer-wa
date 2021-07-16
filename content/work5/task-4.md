@@ -4,9 +4,7 @@ chapter = false
 weight = 1 
 +++
 
-<img src="../images/allup_light_access-network.png" alt="drawing" width="200"/>
-
-At the end of this lab, we should validate the automated actions we configure and consider to experiment more often with new functionalities, services and technologies.
+At the end of this task, we should validate the automated actions we configure and consider to experiment more often with new functionalities, services and technologies.
 
 1.	Open the **CloudShell** console.
 
@@ -18,6 +16,10 @@ At the end of this lab, we should validate the automated actions we configure an
 curl -o run-stress-test.sh https://ee-assets-prod-us-east-1.s3.us-east-1.amazonaws.com/modules/6cfbb89d4a74400082ad348b4ec61df1/v1/run-stress-test.sh
 chmod +x run-stress-test.sh
 ```
+{{% notice note %}}
+According to their business growth plans, for **The New Company**, this stress test could represent a simulation of the expected traffic that they could have in the near future.
+{{% /notice %}}
+
 
 <img src="../images/T04S02.png" alt="drawing" width="800"/>
 
@@ -53,26 +55,14 @@ aws ssm describe-instance-information --output text --query "InstanceInformation
 
 7.	After the script finishes running, the instances count in the auto scaling group and their CPU% utilization will get back to normal.
 
+{{% notice info %}}
+One of the more important aspects about monitoring performance and runnnig experiments is that **you can use data to make fact-based decisions about your architecture**. In the case of The New Company and according to the insights that you got in this Lab: **What would you recommend to the customer?** If the customer want to meet the demand in the near future, should the customer change the EC2 instance type? Should the customer increase the maximum limit configuration for the EC2 Auto Scaling Group? Are there other activities to do before making decisions?
+{{% /notice %}}
 
-### Lab end
+---
 
-We have work on the efficient use of computing resources to meet requirements, and how to maintain efficiency as demand changes and technologies evolve. From now on, you should keep reviewing your choices on a regular basis, ensures that you are taking advantage of the continually evolving of AWS Cloud.
+**Great Job!** You finished this lab, let's wrap up. 
 
-When architecting workloads, there are finite options that you can choose from. However, over time, new technologies and approaches become available that could improve the performance of your workload. In the cloud it's much easier to experiment with new features and services because you will be using infrastructure as code.
-To adopt a data-driven approach to architecture, you should implement a performance review process that considerers the following: 
+We have worked on the efficient use of computing resources to meet requirements, and how to maintain efficiency as demand changes and technologies evolve. From now on, you should keep reviewing your choices on a regular basis, ensures that you are taking advantage of the continually evolving of AWS Cloud.
 
-* Infrastructure as code.
-
-* Deployment pipeline.
-
-* Well-defined metrics.
-
-* Performance test automatically.
-
-* Load generation.
-
-* Performance visibility.
-
-* Visualization.
-
-https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/review.html
+When architecting workloads, there are finite options that you can choose from. However, over time, new technologies and approaches become available that could improve the performance of your workload. Fortunately, in the cloud it is much easier to experiment with new features and services.

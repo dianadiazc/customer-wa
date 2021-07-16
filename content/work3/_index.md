@@ -30,15 +30,15 @@ You will use Systems Manager in this Lab, therefore it is strongly recommended t
 
 ## Tasks
 
-1. Adding subnets to a second AZ
-2. Deploying Amazon RDS using multi-AZ
-3. Updating SSM Parameter Store database
-4. Creating an Application Load Balancer and a Target Group
-5. Database migration with SSM Run Command
-6. Creating Launch Template
-7. Create Auto Scaling Group
-8. Creating Route 53 health check
-9. Testing reliability
+1. [Adding subnets to a second AZ](https://main.d2azidedm760yt.amplifyapp.com/work3/task-1/)
+2. [Deploying Amazon RDS using multi-AZ](https://main.d2azidedm760yt.amplifyapp.com/work3/task-2/)
+3. [Updating SSM Parameter Store database](https://main.d2azidedm760yt.amplifyapp.com/work3/task-3/)
+4. [Creating an Application Load Balancer and a Target Group](https://main.d2azidedm760yt.amplifyapp.com/work3/task-4/)
+5. [Database migration with SSM Run Command](https://main.d2azidedm760yt.amplifyapp.com/work3/task-5/)
+6. [Creating Launch Template](https://main.d2azidedm760yt.amplifyapp.com/work3/task-6/)
+7. [Create Auto Scaling Group](https://main.d2azidedm760yt.amplifyapp.com/work3/task-7/)
+8. [Creating Route 53 health check](https://main.d2azidedm760yt.amplifyapp.com/work3/task-8/)
+9. [Testing reliability](https://main.d2azidedm760yt.amplifyapp.com/work3/task-9/)
 
 ## Architecture
 

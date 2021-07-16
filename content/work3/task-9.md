@@ -78,4 +78,4 @@ No application downtime was observed during the test.
 
 -----
 
-Congrats :). You have finished the second Lab of this workshop!
+**Congrats :)**. You have finished the second Lab of this workshop!

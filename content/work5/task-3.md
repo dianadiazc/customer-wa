@@ -4,8 +4,6 @@ chapter = false
 weight = 1 
 +++
 
-<img src="../images/allup_light_analyze-data.png" alt="drawing" width="200"/>
-
 In this phase we will create a dashboard to visualize the performance of our resources and detect the alarms that can trigger an automated action like scaling.
 
 1.	Go to AWS Cloudwatch.

@@ -26,7 +26,7 @@ AWS CloudTrail, AWS Config, Amazon VPC, Systems Manager
 
 You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
 
-It is strongly recommended to run **Lab 1: Operational Excellence** and **Lab 2: Resiliency** in this workshop to perform this Lab. In case you cannot complete Lab 2 before performing this Lab, you could execute the activities, however you will see a different configuration in your console compared to the one in the instructions. 
+It is strongly recommended to run **Lab 1: Operational Excellence** and **Lab 2: Reliability** in this workshop to perform this Lab. In case you cannot complete Lab 2 before performing this Lab, you could execute the activities, however you will see a different configuration in your console compared to the one in the instructions. 
 
 ## Tasks
 

@@ -38,7 +38,7 @@ sudo yum install gettext -y
 
 
 {{% notice warning %}}
-If you **close or leave AWS CloudShell**, please ensure to execute **sudo yum install gettext -y** command again, because this installation  is not persistent and you will use it every time that you found **envsubst** in the subsequent commands. 
+If you **close or leave AWS CloudShell**, please ensure to execute **sudo yum install gettext -y** command again, because this installation  is not persistent and you will use it every time that you find **envsubst** in the subsequent commands. 
 {{% /notice %}}
 
 

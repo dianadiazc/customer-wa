@@ -4,8 +4,6 @@ chapter = false
 weight = 1 
 +++
 
-<img src="../images/allup_light_Artboard.png" alt="drawing" width="200"/>
-
 We will create policies to automate the creation of instances to scale out the architecture and support the increase in the demand. We can also reduce the number of instances in case the there is a reduction in the users and transactions into the application.
 
 1.	You will create the **scale-out-policy**. Navigate to **EC2** > **Auto Scaling Groups**.
