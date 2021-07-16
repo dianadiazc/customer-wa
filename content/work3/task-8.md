@@ -57,6 +57,6 @@ In this task you will configure a health check to monitor the EC2 failure inject
 
 <img src="../images/r53-6.png" alt="drawing" width="600"/>
 
-5. To view the application health status select the health check, and in the below panel click on the **Monitoring** tab, after a couple of minutes you will see the app health check status is `1.0`
+6. To view the application health status select the health check, and in the below panel click on the **Monitoring** tab, after a couple of minutes you will see the app health check status is `1.0`
 
 <img src="../images/r53-7.png" alt="drawing" width="600"/>

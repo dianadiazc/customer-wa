@@ -12,7 +12,7 @@ After performing steps in this Lab, you have the following architecture:
 
 <img src="../images/lab2-task4.png" alt="drawing" width="800"/>
 
-1. Create asecurity group for the Application Load Balancer (ALB).
+1. Create a security group for the Application Load Balancer (ALB).
 
 ```sh
 aws ec2 create-security-group --description "ALB Security group" --group-name "wa-alb-sg" --vpc-id $VPC
