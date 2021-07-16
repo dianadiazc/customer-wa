@@ -27,7 +27,7 @@ aws iam attach-role-policy --role-name wa-lab-ssm-ec2-role --policy-arn arn:aws:
 
 <img src="../images/ssm2.png" alt="drawing" width="800"/> 
 
-7. In the **Command parameters** section, paste commands bellow. Note that we are using Secrets Manager (created at lab deployment) to pull the RDS Database masteruser password and Parameter Store (also precreated at lab launch) to pull the RDS instance endpoint.
+7. In the **Command parameters** section, paste commands below. Note that we are using Secrets Manager (created at lab deployment) to pull the RDS Database masteruser password and Parameter Store (also precreated at lab launch) to pull the RDS instance endpoint.
 
 ```sh
 #!/bin/bash

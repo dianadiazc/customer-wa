@@ -36,6 +36,12 @@ Even though you can create subnets, load balancers, auto scaling groups and othe
 sudo yum install gettext -y
 ```
 
+
+{{% notice warning %}}
+If you **close or leave AWS CloudShell**, please ensure to execute **sudo yum install gettext -y** command again, because this installation  is not persistent and you will use it every time that you found **envsubst** in the subsequent commands. 
+{{% /notice %}}
+
+
 5. In the dialog box, uncheck "Ask before pasting multiline code" option and click on **Paste**.
 
 <img src="../images/cs3.png" alt="drawing" width="500"/>
@@ -47,13 +53,13 @@ You will see the following output:
 6. Add AWS account number
 
 ```sh
-export awsAccount=`aws sts get-caller-identity --query "Account" --output text`
+export awsAccount=`aws sts get-caller-identity --query "Account" --output text` && echo awsAccount=$awsAccount >> ~/.bashrc
 ```
 
 7. Add VPC id as environment variable
 
 ```sh
-export VPC=`aws ec2 describe-vpcs --filters Name=tag:Name,Values=wa-lab-vpc --query 'Vpcs[*].VpcId' --output text --region us-west-2`
+export VPC=`aws ec2 describe-vpcs --filters Name=tag:Name,Values=wa-lab-vpc --query 'Vpcs[*].VpcId' --output text --region us-west-2` && echo VPC=$VPC >> ~/.bashrc
 ```
 
 8. Create a public and a private subnet in the second AZ (us-west-2b).
@@ -67,17 +73,17 @@ aws ec2 create-subnet --vpc-id $VPC --cidr-block "10.100.3.0/24" --availability-
 9. Add private a route table as environment variable.
 
 ```sh
-export publicRt=`aws ec2 describe-route-tables --filters Name=tag:Name,Values=wa-public-rt --query 'RouteTables[*].RouteTableId' --output text --region us-west-2`
+export publicRt=`aws ec2 describe-route-tables --filters Name=tag:Name,Values=wa-public-rt --query 'RouteTables[*].RouteTableId' --output text --region us-west-2` && echo publicRt=$publicRt >> ~/.bashrc
 
-export privateRt=`aws ec2 describe-route-tables --filters Name=tag:Name,Values=wa-private-rt --query 'RouteTables[*].RouteTableId' --output text --region us-west-2`
+export privateRt=`aws ec2 describe-route-tables --filters Name=tag:Name,Values=wa-private-rt --query 'RouteTables[*].RouteTableId' --output text --region us-west-2` && echo privateRt=$privateRt >> ~/.bashrc
 ```
 
 10. Add a new private subnet and a public subnet as environment variables.
 
 ```sh
-export publicSubnetId=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-public-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2`
+export publicSubnetId=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-public-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2` && echo publicSubnetId=$publicSubnetId >> ~/.bashrc
 
-export privateSubnetId=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-private-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2`
+export privateSubnetId=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-private-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2` && echo privateSubnetId=$privateSubnetId >> ~/.bashrc
 ```
 
 11. Associate private and public route tables.
@@ -87,7 +93,3 @@ aws ec2 associate-route-table --subnet-id $publicSubnetId --route-table-id $publ
 
 aws ec2 associate-route-table --subnet-id $privateSubnetId --route-table-id $privateRt
 ```
-
-{{% notice warning %}}
-If you **close or leave AWS CloudShell**, please ensure to execute **export** commands again, because those variable are not persistent and you will use them later in this and other tasks of this Lab. 
-{{% /notice %}}

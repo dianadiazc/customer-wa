@@ -29,7 +29,7 @@ aws ssm get-parameters --names "DbPrivateDns" --output table
 Now update the Parameter Store parameter with the RDS instance endpoint (the Autoscaling group application instances will use it during their bootstrapping).
 
 ```sh
-export rdsEndPoint=`aws rds describe-db-instances --db-instance-identifier "waDbInstance" --query 'DBInstances[*].Endpoint.Address' --output text --region us-west-2`
+export rdsEndPoint=`aws rds describe-db-instances --db-instance-identifier "waDbInstance" --query 'DBInstances[*].Endpoint.Address' --output text --region us-west-2` && echo rdsEndPoint=$rdsEndPoint >> ~/.bashrc
 
 aws ssm put-parameter --name "DbPrivateDns" --value $rdsEndPoint --overwrite
 ```

@@ -20,7 +20,7 @@ In this task you will configure a health check to monitor the EC2 failure inject
 
 <img src="../images/r53-2.png" alt="drawing" width="500"/>
 
-3. Use the information in tables bellow to configure the health check.
+3. Use the information in tables below to configure the health check.
 
 **Configure health check**
 

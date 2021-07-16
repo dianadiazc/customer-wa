@@ -25,9 +25,9 @@ aws ec2 create-subnet --vpc-id $VPC --cidr-block "10.100.5.0/24" --availability-
 2. Add new RDS subnets as environment variables.
 
 ```sh
-export rdsSubnet1Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-rds-subnet-1 --query 'Subnets[*].SubnetId' --output text --region us-west-2`
+export rdsSubnet1Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-rds-subnet-1 --query 'Subnets[*].SubnetId' --output text --region us-west-2` && echo rdsSubnet1Id=$rdsSubnet1Id >> ~/.bashrc
 
-export rdsSubnet2Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-rds-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2`
+export rdsSubnet2Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-rds-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2` && echo rdsSubnet2Id=$rdsSubnet2Id >> ~/.bashrc
 ```
 
 3. Associate RDS subnets to a private route table.
@@ -47,9 +47,10 @@ aws rds create-db-subnet-group --db-subnet-group-name "wa-rds-subnet-group" --db
 
 ```sh
 aws ec2 create-security-group --description "RDS Security group" --group-name "wa-rds-sg" --vpc-id $VPC
-export rdsSg=`aws ec2 describe-security-groups --filters Name=group-name,Values=wa-rds-sg --query 'SecurityGroups[*].GroupId' --output text --region us-west-2`
 
-export ec2DbSg=`aws ec2 describe-security-groups --filters Name=group-name,Values=wa-database-sg --query 'SecurityGroups[*].GroupId' --output text --region us-west-2`
+export rdsSg=`aws ec2 describe-security-groups --filters Name=group-name,Values=wa-rds-sg --query 'SecurityGroups[*].GroupId' --output text --region us-west-2` && echo rdsSg=$rdsSg >> ~/.bashrc
+
+export ec2DbSg=`aws ec2 describe-security-groups --filters Name=group-name,Values=wa-database-sg --query 'SecurityGroups[*].GroupId' --output text --region us-west-2` && echo ec2DbSg=$ec2DbSg >> ~/.bashrc
 
 aws ec2 authorize-security-group-ingress --group-id $rdsSg --source-group $ec2DbSg --protocol "tcp" --port "3306"
 ```

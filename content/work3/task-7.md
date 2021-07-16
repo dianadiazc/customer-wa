@@ -13,11 +13,11 @@ After completing the steps in this Task, you will have the architecture in the f
 1. Create Auto Scaling Group
 
 ```sh
-export asgSubnet1Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-private-subnet-1 --query 'Subnets[*].SubnetId' --output text --region us-west-2`
+export asgSubnet1Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-private-subnet-1 --query 'Subnets[*].SubnetId' --output text --region us-west-2` && echo asgSubnet1Id=$asgSubnet1Id >> ~/.bashrc
 
-export asgSubnet2Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-private-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2`
+export asgSubnet2Id=`aws ec2 describe-subnets --filters Name=tag:Name,Values=wa-private-subnet-2 --query 'Subnets[*].SubnetId' --output text --region us-west-2` && echo asgSubnet2Id=$asgSubnet2Id >> ~/.bashrc
 
-export waLaunchTemplate=`aws ec2 describe-launch-templates --launch-template-names waLaunchTemplate --query 'LaunchTemplates[*].LaunchTemplateId' --output text --region us-west-2`
+export waLaunchTemplate=`aws ec2 describe-launch-templates --launch-template-names waLaunchTemplate --query 'LaunchTemplates[*].LaunchTemplateId' --output text --region us-west-2` && echo waLaunchTemplate=$waLaunchTemplate >> ~/.bashrc
 
 aws autoscaling create-auto-scaling-group --auto-scaling-group-name "waAutoscaleGroup" --launch-template LaunchTemplateId=$waLaunchTemplate --min-size "2" --max-size "4" --target-group-arns $waTg --vpc-zone-identifier "$asgSubnet1Id,$asgSubnet2Id"
 ```

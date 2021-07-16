@@ -28,7 +28,7 @@ aws iam add-role-to-instance-profile --instance-profile-name "wa-asg-instance-pr
 ```sh
 aws ec2 create-security-group --description "Launch Template Security group" --group-name "wa-asg-sg" --vpc-id $VPC
 
-export asgSg=`aws ec2 describe-security-groups --filters Name=group-name,Values=wa-asg-sg --query 'SecurityGroups[*].GroupId' --output text --region us-west-2`
+export asgSg=`aws ec2 describe-security-groups --filters Name=group-name,Values=wa-asg-sg --query 'SecurityGroups[*].GroupId' --output text --region us-west-2` && echo asgSg=$asgSg >> ~/.bashrc
 
 aws ec2 authorize-security-group-ingress --group-id $asgSg --source-group $albSg --protocol "tcp" --port "80"
 ```
