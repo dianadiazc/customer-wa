@@ -69,7 +69,7 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 <img src="../images/ip81.png" alt="drawing" width="8000"/>
 
 {{% notice warning %}}
-To ensure that your instances will be available in Systems Manager, please **stop** and **start** both **EC2 instances**. 
+To ensure that your instances will be available in Systems Manager, please **reboot** both **EC2 instances**. 
 {{% /notice %}}
 
 ## Checking EC2 instances in Systems Manager
