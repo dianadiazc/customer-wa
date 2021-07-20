@@ -32,7 +32,7 @@ There are two EC2 instances running with a name beginning with `wa-auto*`. For t
 4. Go back to **AWS CloudShell**. Run this commands to get instances IDs in your Auto Scaling Group.
 
 ```sh
-aws ec2 describe-instances --filters Name=tag:Name,Values=wa-auto-scale-group --query 'Reservations[].Instances[].InstanceId' --output text
+aws ec2 describe-instances --filters Name=tag:Name,Values=wa-auto-scale-group --query 'Reservations[].Instances[*].{InstanceID:InstanceId,Type:InstanceType,AZ:Placement.AvailabilityZone,PrivateIP:PrivateIpAddress,Subnet:SubnetId,Time:LaunchTime,State:State.Name}' --output table
 ```
 The output should look like: 
 
@@ -79,3 +79,7 @@ No application downtime was observed during the test.
 -----
 
 **Congrats :)**. You have finished the second Lab of this workshop!
+
+Deploying multiple servers and Elastic Load Balancing enables a service suffer the loss of a server with no availability disruptions as user traffic is automatically routed to the healthy servers. Amazon Auto Scaling ensures unhealthy hosts are removed and replaced with healthy ones to maintain high availability.
+
+Availability Zones (AZs) are isolated sets of resources within a region, each with redundant power, networking, and connectivity, housed in separate facilities. Each Availability Zone is isolated, but the Availability Zones in a Region are connected through low-latency links. AWS provides you with the flexibility to place instances and store data across multiple Availability Zones within each AWS Region for high resiliency.
