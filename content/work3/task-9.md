@@ -49,7 +49,11 @@ aws ec2 terminate-instances --instance-ids <YOUR-INSTANCE-ID>
 
 <img src="../images/chaos1.png" alt="drawing" width="600"/>
 
-7. Go to the **Target Groups** console you already have open. Select `waAutoscale-tg` and click on **Targets** and observe:
+7. Take a look at your EC2 instances. You will see that one of the instances is shutting-down.
+
+<img src="../images/chaos4.png" alt="drawing" width="900"/>
+
+8. Go to the **Target Groups** console you already have open. Select `waAutoscale-tg` and click on **Targets** and observe:
 
 * Status of the instances in the group. The load balancer will only send traffic to *healthy* instances. You will have just one Target and its status should be *healthy*. 
 
@@ -59,17 +63,17 @@ aws ec2 terminate-instances --instance-ids <YOUR-INSTANCE-ID>
 
 * Note the new instance was started in the same Availability Zone as the failed one. Amazon EC2 Auto Scaling automatically maintains balance across all of the Availability Zones that you specify.
 
-<img src="../images/ec2-3.png" alt="drawing" width="900"/>
+<img src="../images/ec2-3.png" alt="drawing" width="1000"/>
 
-8. Go to the **Auto Scaling Groups console** you already have open. Click on the **Activity** tab and observe:
+9. Go to the **Auto Scaling Groups console** you already have open. Click on the **Activity** tab and observe:
 
-* At 00:51:51Z the instance targeted by the command was taken out of service in response to an EC2 health check indicating it has been terminated or stopped.
+* At 15:50:34Z an instance was taken out of service in response to an EC2 health check indicating it has been terminated or stopped.
 
-* At 00:52:11Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 1 to 2.
+* At 15:50:55Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 1 to 2.
 
 <img src="../images/ec2-8.png" alt="drawing" width="900"/>
 
-9. Go to Route53 to monitor the application health status.
+10. Go to Route53 to monitor the application health status.
 
 <img src="../images/ec2-4.png" alt="drawing" width="900"/>
 
