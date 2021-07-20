@@ -6,6 +6,13 @@ weight = 5
 
 In this task you will migrate Application Database from the EC2 instance to Amazon RDS MariaDB - Multi-AZ Deployment. You will perform this activity using *Run command* option from Systems Manager. 
 
+{{% notice warning %}}
+Before starting this task, please **make sure that you have inserted data in your database**. Plase, go to the Web Application and check that you have items included.
+{{% /notice %}}
+
+<img src="../images/app3.png" alt="drawing" width="800"/> 
+
+
 1. Create an IAM policy to add to the DB server EC2 instance role, so the DB server could pull the RDS endpoint from parameter store and the RDS instance password from Secrets Manager.
 
 

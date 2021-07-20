@@ -63,3 +63,7 @@ aws rds create-db-instance --db-name "WaRdsDb" --db-instance-identifier "waDbIns
 {{% notice info %}}
 Multi-AZ RDS creation will take **~10-15 minutes**. Please go ahead and continue with the next task. 
 {{% /notice %}}
+
+7. After executing previous command, you will see **:** at the bottom of the screen. Just type **q** to quit of that process and continue using the AWS CloudShell for the subsequent steps. Multi-AZ RDS creation process will continue.
+
+<img src="../images/rds1.png" alt="drawing" width="400"/>

@@ -24,12 +24,12 @@ aws autoscaling create-auto-scaling-group --auto-scaling-group-name "waAutoscale
 
 2. Go to **EC2** service and validate that a couple of new instances are being created.
 
-<img src="../images/ssm7.png" alt="drawing" width="800"/>
+<img src="../images/ssm7.png" alt="drawing" width="900"/>
 
 3. From the left pane, select **Load Balancers** and click on **DNS name** icon. 
 
 <img src="../images/dns2.png" alt="drawing" width="800"/>
 
-4. Paste the ELB DNS name in a web browser to test the application.
+4. Paste the ELB DNS name in a web browser and insert a couple items to test the application.
 
-<img src="../images/app1.png" alt="drawing" width="800"/>
+<img src="../images/app4.png" alt="drawing" width="800"/>
