@@ -4,9 +4,9 @@ chapter = false
 weight = 4 
 +++
 
-**AWS Systems Manager** (formerly known as SSM) is an AWS service that you can use to view and control your infrastructure on AWS. Using the Systems Manager console, you can view operational data from multiple AWS services and automate operational tasks across your AWS resources. 
+**AWS Systems Manager** (formerly known as SSM) is an AWS service that you can use to view and control your infrastructure on AWS. AWS Systems Manager is the operations hub for AWS. Systems Manager provides a unified user interface so you can track and resolve operational issues across your AWS applications and resources from a central place.  
 
-AWS Systems Manager Agent (SSM Agent) is Amazon software that can be installed and configured on an EC2 instance, an on-premises server, or a virtual machine (VM). SSM Agent makes it possible for Systems Manager to update, manage, and configure these resources.
+AWS Systems Manager **Agent** (SSM Agent) is Amazon software that can be installed and configured on an EC2 instance, an on-premises server, or a virtual machine (VM). SSM Agent makes it possible for Systems Manager to update, manage, and configure these resources.
 
 SSM Agent is preinstalled, by default, on the following Amazon Machine Images (AMIs):
 

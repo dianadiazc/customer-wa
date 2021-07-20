@@ -8,7 +8,7 @@ weight = 7
 
 <img src="../images/lg1.png" alt="drawing" width="600"/> 
 
-2. In the navigation pane, select **Metrics** and later click on **CWAgent** on *Custom Namespaces*
+2. In the navigation pane, select **Metrics**, **All metrics** and later click on **CWAgent** on *Custom Namespaces*
 
 <img src="../images/lg2.png" alt="drawing" width="600"/> 
 
@@ -24,7 +24,7 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
 
 <img src="../images/lg4.png" alt="drawing" width="800"/> 
 
-5. (optional) You can check memory utilization for your EC2 instances.
+5. (Optional) You can check memory utilization for your EC2 instances.
 
 6. We are going to navigate through log groups. Go to **Logs** in the navigation pane and then click on Log groups. You will see 4 new **Log groups** where you can view the events happening in your instances’ operating system and applications (Apache and MariaDB).
 
@@ -35,7 +35,7 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
 
 <img src="../images/lg5.png" alt="drawing" width="800"/> 
 
-7. Now access the application web server using the public DNS or IP. 
+7. Now access the application web server using the public DNS or IP.
 
 8. Go back to **CloudWatch logs** -> **Log groups** -> **httpd_access_log** -> Click on the log stream and you will see your public IP listed (use https://www.whatismyip.com)
 
@@ -48,6 +48,10 @@ You could take a look at other Log groups as well.
 ---
 
 You have finished this first Lab. Awesome, right? :)
+
+In a traditional environment you would have to set up the systems and software to perform administration activities. You would require a server to execute your scripts. You would need to manage authentication credentials across all of your systems.
+
+**Operations as code** reduces the resources, time, risk, and complexity of performing operations tasks and ensures consistent execution. You can take operations as code and automate operations activities by using scheduling and event triggers. Through integration at the infrastructure level you avoid “swivel chair” processes that require multiple interfaces and systems to complete a single operations activity.
 
 
 
