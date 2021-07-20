@@ -26,7 +26,7 @@ You proposed doing a Well-Architected Framework Review (WAFR) of the customer’
 2.	It is clear for the customer that they need to have a highly available architecture.
 3.	Security is their number 1 priority. The more insights they can have available related to this topic, the better.
 4.	They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. The New Company people want to do some stress tests for the application, especially because they are expecting an increase in the demand on the application in the near future.
-5.	Cost matters. The customer is testing other apps, and have had some users launch EC2 instances with optimized resources, when they are not needed. This situation has increased the monthly bill. The New Company people want to control this situation.
+5.	Cost matters. The customer would like to have a clear visibility about costs and usage for the AWS Services. They would like to use a flexible tool for creating their own dasboards according to their needs. 
 
 The information above is your starting point to help this customer enhance the architecture and achieve their objectives. You may identify more opportunities for improvement in this architecture but, for the purposes of the workshop, just focus on these findings.
 
