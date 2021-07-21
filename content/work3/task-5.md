@@ -34,7 +34,7 @@ aws iam attach-role-policy --role-name wa-lab-ssm-ec2-role --policy-arn arn:aws:
 
 <img src="../images/ssm2.png" alt="drawing" width="800"/> 
 
-7. In the **Command parameters** section, paste commands below. Note that we are using Secrets Manager (created at lab deployment) to pull the RDS Database masteruser password and Parameter Store (also precreated at lab launch) to pull the RDS instance endpoint.
+5. In the **Command parameters** section, paste commands below. Note that we are using Secrets Manager (created at lab deployment) to pull the RDS Database masteruser password and Parameter Store (also precreated at lab launch) to pull the RDS instance endpoint.
 
 ```sh
 #!/bin/bash
@@ -50,17 +50,17 @@ mysql -h $rdsendpoint -u $user -p$rdspasswd -e "FLUSH PRIVILEGES;"
 ```
 <img src="../images/ssm3.png" alt="drawing" width="800"/> 
 
-8. In the **Targets** section select **Choose instances manually" and later the DB server `wa-db-server`.
+6. In the **Targets** section select **Choose instances manually" and later the DB server `wa-db-server`.
 
 <img src="../images/ssm4.png" alt="drawing" width="800"/> 
 
-9. Click on **Run**.
+7. Click on **Run**.
 
-10. Database has been migrated to the RDS instance.
+8. Database has been migrated to the RDS instance.
 
 <img src="../images/ssm5.png" alt="drawing" width="800"/> 
 
-11. At this point, you could *stop* EC2 instances `wa-web-server` and `wa-db-server` from the EC2 console.
+9. At this point, you could *stop* EC2 instances `wa-web-server` and `wa-db-server` from the EC2 console.
 
 <img src="../images/ssm6.png" alt="drawing" width="800"/> 
 

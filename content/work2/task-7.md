@@ -35,19 +35,25 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
 
 <img src="../images/lg5.png" alt="drawing" width="800"/> 
 
-7. Now access the application web server using the public DNS or IP.
+7. Now access the application web server using the public DNS or IP, make some inserts to update the database.
+
+<img src="../images/app4.png" alt="drawing" width="800"/> 
 
 8. Go back to **CloudWatch logs** -> **Log groups** -> **httpd_access_log** -> Click on the log stream and you will see your public IP listed (use https://www.whatismyip.com)
 
 <img src="../images/lg7.png" alt="drawing" width="900"/> 
 
-<img src="../images/lg8.png" alt="drawing" width="1000"/> 
+<img src="../images/lg10.png" alt="drawing" width="1000"/> 
 
-You could take a look at other Log groups as well.
+9. Now go to **db_general_query_log** -> Click on the log stream and you will see logged the database inserts you just made.
 
----
+<img src="../images/lg9.png" alt="drawing" width="1000"/> 
+
+<img src="../images/lg11.png" alt="drawing" width="1000"/> 
 
 You have finished this first Lab. Awesome, right? :)
+
+---
 
 In a traditional environment you would have to set up the systems and software to perform administration activities. You would require a server to execute your scripts. You would need to manage authentication credentials across all of your systems.
 
