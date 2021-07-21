@@ -11,7 +11,7 @@ The Cost Optimization pillar includes the ability to run systems to deliver busi
 <img src="images/cost.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-**The New Company** would like to have a clear visibility about costs and usage for the AWS Services. They would like to use a flexible tool for creating their own dasboards according to their needs. They understand that they need a new way of thinking about expenditures.
+**The New Company** would like to have a clear visibility about costs and usage for the AWS Services. They would like to use a flexible tool for creating their own dasboards according to their needs. They understand that they need a new way of analyzing expenditures to make informed decisions about cost tradeoffs.
 {{% /notice %}}
 
 ## Objective
@@ -19,8 +19,6 @@ The Cost Optimization pillar includes the ability to run systems to deliver busi
 This lab will guide you through the steps to visualize the cost and usage of AWS services in an account using Amazon QuickSight. This kind of implementation will provide cost and usage awareness throughout the organization, which is a fundamental practice according to the **Cloud Financial Management** design principle.
 
 You will use a Cost and Usage Report (CUR) already prepared for you as part of this lab environment and you will use QuickSight to create visuals that will help you create costs analysis.
-
-
 
 ## Services
 
