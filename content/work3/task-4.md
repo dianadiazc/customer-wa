@@ -8,7 +8,7 @@ A **load balancer** serves as the single point of contact for clients. The load 
 
 In this task you are going to create an *Application Load Balancer (ALB)* and a *Target group* that you will use when configuring the Auto Scaling Group later in this Lab. 
 
-After performing steps in this Lab, you have the following architecture:
+After performing steps in this Lab, you will have the following architecture:
 
 <img src="../images/lab2-task4.png" alt="drawing" width="800"/>
 

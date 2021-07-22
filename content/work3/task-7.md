@@ -6,7 +6,7 @@ weight = 7
 
 An **Auto Scaling group** contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management. Amazon EC2 Auto Scaling enables you to take advantage of the safety and reliability of geographic redundancy by spanning Auto Scaling groups across multiple Availability Zones within a Region. 
 
-After completing the steps in this Task, you will have the architecture in the following diagram:
+After completing the steps in this Task, you will have the architecture as in the following diagram:
 
 <img src="../images/lab2-task7.png" alt="drawing" width="800"/>
 

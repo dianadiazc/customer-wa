@@ -59,7 +59,7 @@ aws ec2 terminate-instances --instance-ids <YOUR-INSTANCE-ID>
 
 * When the auto scaling launches a new instance, it is automatically added to the load balancer target group.
 
-* In the screen cap below the unhealthy instance is the newly added one. The load balancer will not send traffic to it until it is completed initializing. It will ultimately transition to healthy and then start receiving traffic.
+* In the screen cap below the unhealthy instance is the newly added one. The load balancer will not send traffic to it until it is completed initialized. It will ultimately transition to healthy and then start receiving traffic.
 
 * Note the new instance was started in the same Availability Zone as the failed one. Amazon EC2 Auto Scaling automatically maintains balance across all of the Availability Zones that you specify.
 
@@ -67,9 +67,9 @@ aws ec2 terminate-instances --instance-ids <YOUR-INSTANCE-ID>
 
 9. Go to the **Auto Scaling Groups console** you already have open. Click on the **Activity** tab and observe:
 
-* At 15:50:34Z an instance was taken out of service in response to an EC2 health check indicating it has been terminated or stopped.
+* First, an instance was taken out of service in response to an EC2 health check indicating it has been terminated or stopped.
 
-* At 15:50:55Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 1 to 2.
+* Later on, an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 1 to 2.
 
 <img src="../images/ec2-8.png" alt="drawing" width="900"/>
 

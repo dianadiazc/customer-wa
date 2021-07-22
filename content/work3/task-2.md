@@ -7,7 +7,7 @@ weight = 2
 This task will walk you through the steps needed of creating an **Amazon RDS MariaDB - Multi-AZ deployment**. This deployment provide enhanced availability and durability for RDS database (DB) instances, making them a natural fit for production database workloads. When you provision a Multi-AZ DB Instance, Amazon RDS automatically creates a primary DB Instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ).
 
 {{% notice note %}}
-Remember that current customer's database doesn't have high availibility. You are looking for improving reliability for the Application components, which includes the Database. You will use the multi-AZ deployment in a future Task in this Lab to migrate the original Database.
+Remember that current customer's database doesn't have high availibility. You are looking to improve reliability for the Application components, which includes the Database. You will use the multi-AZ deployment in a future Task in this Lab to migrate the original Database.
 {{% /notice %}} 
 
 After completing the steps in this Lab, you will have the following architecture:

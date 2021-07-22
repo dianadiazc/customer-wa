@@ -48,4 +48,4 @@ Since you will be using QuickSight thru this lab, the first step will be enable 
 
     <img src="../images/qs-congrats.png" alt="drawing" width="450"/>
 
-1. You will be logged in your QuickSight account, in the **What’s New in Amazon QuickSight** window you could important information regarding service enhacements, fell free to review them. Once done, click **Close** at the bottom of the window.
+1. You will be logged in your QuickSight account, in the **What’s New in Amazon QuickSight** window you could see important information regarding service enhacements, fell free to review them. Once done, click **Close** at the bottom of the window.

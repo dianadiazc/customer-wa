@@ -4,7 +4,7 @@ chapter = false
 weight = 3 
 +++
 
-1. In this task you will a add an Athena table pre-created for you as part of this lab environment as a new Dataset for Analysis. The source dataset is an parquet file stored in an S3 bucket in the account you currently working on.
+1. In this task you will add an Athena table pre-created for you as part of this lab environment as a new Dataset for Analysis. The source dataset is a parquet file stored in a S3 bucket in the account you are currently working on.
 
 1. In the Analyses page, click on **New analysis**.
 
@@ -16,7 +16,7 @@ weight = 3
 
     <img src="../images/qs-select-athena.png" alt="drawing" width="800"/>
 
-1. In the **New Athena data source** window, type `wa-cur`as the **Data source name.
+1. In the **New Athena data source** window, type `wa-cur`as the **Data source name**.
 
 1. Click on **Create data source**.
 
@@ -31,3 +31,5 @@ weight = 3
     <img src="../images/qs-select-glue-db.png" alt="drawing" width="500"/>
 
 1. In the **Finish dataset creation** window, click on **Visualize**.
+
+ <img src="../images/spice.png" alt="drawing" width="500"/>

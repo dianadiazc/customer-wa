@@ -4,7 +4,7 @@ chapter = false
 weight = 5
 +++
 
-In this task you will migrate Application Database from the EC2 instance to Amazon RDS MariaDB - Multi-AZ Deployment. You will perform this activity using *Run command* option from Systems Manager. 
+In this task you will migrate the Application Database from the EC2 instance to Amazon RDS MariaDB - Multi-AZ Deployment. You will perform this activity using *Run command* option from Systems Manager. 
 
 {{% notice warning %}}
 Before starting this task, please **make sure that you have inserted data in your database**. Plase, go to the Web Application and check that you have items included.
