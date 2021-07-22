@@ -8,6 +8,8 @@ In this task you will use the new **Dataset** to create four visualizations from
 
 <img src="../images/qs-final-dash.png" alt="drawing" width="800"/>
 
+---
+
 #### Visual #1: Monthly expense per AWS service
 
 From the dataset, for this visualization, we will use the following fields (or columns of data):
@@ -42,6 +44,8 @@ From the dataset, for this visualization, we will use the following fields (or c
     {{% notice info %}}
 Note: This values and fields are the same you will find in an AWS invoice. You will notice a **ComputeSavingsPlans** item int the graph. In this lab scenario the EC2 total expense amount would be the sum of **ComputeSavingPlans** plus **AmazonEC2**. For further information regarding Savings Plans please visit: https://aws.amazon.com/savingsplans/
 {{% /notice %}}
+
+---
 
 #### Visual #2: Monthly cost per EC2 instance
 
@@ -146,6 +150,8 @@ Make sure the graph you are working on is selected, it should be highlighted wit
 Note: The values showed in this graph does not include cost of the EBS volumes associated with the EC2 instances
 {{% /notice %}}
 
+---
+
 #### Visual #3: Savings Plan monthly savings
 
 For this visualization, we will use the following fields (or columns of data):
@@ -204,6 +210,7 @@ For this visualization, we will use the following fields (or columns of data):
 
     <img src="../images/qs-set-currency.png" alt="drawing" width="450"/>
 
+---
 
 #### Visual #4: Monthly expense per EBS volume type
 
