@@ -33,7 +33,11 @@ From the dataset, for this visualization, we will use the following fields (or c
 
     <img src="../images/qs-addblendedcost.png" alt="drawing" width="300"/>
 
-After that, you will see the monthly total expenditure in the account in the graph. Later click on the field `product_servicecode`. You could scroll the list or type it in the search box. 
+After that, you will see the monthly total expenditure in the account in the graph. 
+
+<img src="../images/qs-blendedcostingraph.png" alt="drawing" width="700"/>
+
+Later click on the field `product_servicecode`. You could scroll the list or type it in the search box. 
 
 <img src="../images/video.gif" alt="drawing" width="800"/>
 
