@@ -35,6 +35,10 @@ You will run this Lab at an AWS sponsored workshop then you will be provided wit
 
 You should run **Lab 2: Reliability** in this workshop before performing this Lab. 
 
+## Duration
+
+Estimated time to complete: 40 min
+
 ## Tasks
 
 1. [Create the autoscaling alarms](https://main.d2azidedm760yt.amplifyapp.com/work5/task-1/)

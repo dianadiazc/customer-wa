@@ -28,6 +28,10 @@ You will run this Lab at an AWS sponsored workshop then you will be provided wit
 
 It is strongly recommended to run **Lab 1: Operational Excellence** and **Lab 2: Reliability** in this workshop to perform this Lab. In case you cannot complete Lab 2 before performing this Lab, you could execute the activities, however you will see a different configuration in your console compared to the one in the instructions. 
 
+## Duration
+
+Estimated time to complete: 1 hour
+
 ## Tasks
 
 1.	[Enable granular logging](https://main.d2azidedm760yt.amplifyapp.com/work4/task-1/)

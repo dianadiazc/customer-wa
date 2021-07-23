@@ -33,16 +33,16 @@ From the dataset, for this visualization, we will use the following fields (or c
 
     <img src="../images/qs-addblendedcost.png" alt="drawing" width="300"/>
 
-4. You will see the monthly total expenditure in the account in the graph.
+After that, you will see the monthly total expenditure in the account in the graph. Later click on the field `product_servicecode`. You could scroll the list or type it in the search box. 
 
-    <img src="../images/qs-blendedcostingraph.png" alt="drawing" width="700"/>
+<img src="../images/video.gif" alt="drawing" width="800"/>
 
-5. Now add the field `product_servicecode`. You could scroll the list or type it in the search box. This is the expected updated graph view.
+This is the expected updated graph view:
 
-    <img src="../images/qs-samplegraph1.png" alt="drawing" width="450"/>
+<img src="../images/qs-samplegraph1.png" alt="drawing" width="450"/>
 
-    {{% notice info %}}
-Note: This values and fields are the same you will find in an AWS invoice. You will notice a **ComputeSavingsPlans** item int the graph. In this lab scenario the EC2 total expense amount would be the sum of **ComputeSavingPlans** plus **AmazonEC2**. For further information regarding Savings Plans please visit: https://aws.amazon.com/savingsplans/
+{{% notice info %}}
+Note: These values and fields are the same you will find in an AWS invoice. You will notice a **ComputeSavingsPlans** item in the graph. In this lab scenario the EC2 total expense amount would be the sum of **ComputeSavingPlans** plus **AmazonEC2**. For further information regarding Savings Plans please visit: https://aws.amazon.com/savingsplans/
 {{% /notice %}}
 
 ---

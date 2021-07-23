@@ -28,6 +28,10 @@ You will run this Lab at an AWS sponsored workshop then you will be provided wit
 
 You will use Systems Manager in this Lab, therefore it is strongly recommended to run **Lab 1: Operational Excellence** in this workshop to perform this Lab. In case you cannot run all tasks in Lab 1, ensure to run *Task 4: Enabling SSM for EC2 instances*.
 
+## Duration
+
+Estimated time to complete: 1 hour and 10 min
+
 ## Tasks
 
 1. [Adding subnets to a second AZ](https://main.d2azidedm760yt.amplifyapp.com/work3/task-1/)

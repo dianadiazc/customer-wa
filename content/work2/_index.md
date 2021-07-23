@@ -26,6 +26,10 @@ Amazon EC2, AWS Systems Manager, Amazon CloudWatch
 
 You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
 
+## Duration
+
+Estimated time to complete: 1 hour
+
 ## Tasks
 
 1. [Checking the existing architecture](https://main.d2azidedm760yt.amplifyapp.com/work2/task-1/)

@@ -28,13 +28,19 @@ Amazon QuickSight
 
 You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section. You do not need to run previous Labs to complete tasks in this Lab. 
 
+## Duration
+
+Estimated time to complete: 40 min
+
 ## Tasks
 
-1. Enable Amazon QuickSight
+0. [Cost & Usage Report Configuration](https://main.d2azidedm760yt.amplifyapp.com/work6/task-0/)
 
-1. Adding a data source in Amazon QuickSight
+1. [Enable Amazon QuickSight](https://main.d2azidedm760yt.amplifyapp.com/work6/task-1/)
 
-1. Creating visuals in Amazon QuickSight
+2. [Adding a data source in Amazon QuickSight](https://main.d2azidedm760yt.amplifyapp.com/work6/task-2/)
+
+3. [Creating visuals in Amazon QuickSight](https://main.d2azidedm760yt.amplifyapp.com/work6/task-3/)
 
 ## Architecture
 
