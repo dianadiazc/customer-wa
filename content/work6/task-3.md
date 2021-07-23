@@ -37,7 +37,9 @@ After that, you will see the monthly total expenditure in the account in the gra
 
 <img src="../images/qs-blendedcostingraph.png" alt="drawing" width="700"/>
 
-Later click on the field `product_servicecode`. You could scroll the list or type it in the search box. 
+4. Now, click on the field `product_servicecode`. You could scroll the list or type it in the search box. 
+
+You can see steps 3 and 4 in the following gif:
 
 <img src="../images/video.gif" alt="drawing" width="800"/>
 
