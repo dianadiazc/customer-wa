@@ -20,10 +20,12 @@ As part of this Lab 5 environment, we have automated some tasks such as:
 
 * Run a Glue Crawler to create a Glue Table, which will be used as data source for QuickSight
 
+* Create Athena Data Source which will be used by Quicksight as the dataset for analyses
+
 
 This is the Lab 5 environment diagram:
 
-<img src="../images/qs-wa-lab-task-0.png" alt="drawing" width="600"/>
+<img src="../images/wa-lab-task-0.png" alt="drawing" width="600"/>
 
 In this Lab we are using **Cost and Usage Report** sample data.
 

@@ -14,7 +14,7 @@ Since you will be using QuickSight thru this lab, the first step will be enable 
 
     <img src="../images/qs-signup.png" alt="drawing" width="600"/>
 
-1. For this task we will enable the Standard version, click on the radio button nect to the **Standard** version.
+1. For this task we will enable the Standard version, click on the radio button next to the **Standard** version.
 
 1. Scroll down the page and click on **Continue**.
 

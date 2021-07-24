@@ -33,15 +33,15 @@ From the dataset, for this visualization, we will use the following fields (or c
 
     <img src="../images/qs-addblendedcost.png" alt="drawing" width="300"/>
 
-After that, you will see the monthly total expenditure in the account in the graph. 
+    After that, you will see the monthly total expenditure in the account in the graph. 
 
 <img src="../images/qs-blendedcostingraph.png" alt="drawing" width="700"/>
 
 4. Now, click on the field `product_servicecode`. You could scroll the list or type it in the search box. 
 
-You can see steps 3 and 4 in the following gif:
+    You can see steps 3 and 4 in the following gif:
 
-<img src="../images/video.gif" alt="drawing" width="800"/>
+<img src="../images/video.gif" alt="drawing" width="900"/>
 
 This is the expected updated graph view:
 
@@ -88,7 +88,11 @@ Make sure the graph you are working on is selected, it should be highlighted wit
 
 10. Add a second field to the graph, search and click `line_item_resource_id` to add the field to the graph
 
-11. You will see a graph will **all** the resources in the account and their monthly cost, to narrow the information displayed you will use **Filters**, so you can visualize only the data you are interested in.
+11. You will see a graph will **all** the resources in the account and their monthly cost:
+
+<img src="../images/ec2-nofilter.png" alt="drawing" width="500"/>
+
+12. To narrow the information displayed you will use **Filters**, so you can visualize only the data you are interested in.
 
     You will use 2 different fields as filters:
 
@@ -144,15 +148,22 @@ Make sure the graph you are working on is selected, it should be highlighted wit
 
 26. For better visualization now you will change the graph visualization type. From the left menu, click on **Visualize**
 
+ <img src="../images/ec2-instances.png" alt="drawing" width="400"/>
+
 27. Under **Visual types**, click on the *donut chart* option.
 
     <img src="../images/qs-donut.png" alt="drawing" width="280"/>
 
 28. You will notice how the graph is updated.
 
-    <img src="../images/qs-donut2.png" alt="drawing" width="400"/>
+    <img src="../images/qs-donut2.png" alt="drawing" width="600"/>
 
-    {{% notice info %}}
+    So far, your dashboard should look like in the following picture:
+
+<img src="../images/dash-2graphs.png" alt="drawing" width="600"/>
+    
+
+{{% notice info %}}
 Note: The values showed in this graph does not include cost of the EBS volumes associated with the EC2 instances
 {{% /notice %}}
 
@@ -204,7 +215,7 @@ For this visualization, we will use the following fields (or columns of data):
     | *SavingsPlanRecurringFee*  | Recurring charges that correspond with your No Upfront or Partial Upfront Savings Plan |
     | *SavingsPlanNegation* | Offset cost associated with the corresponding Savings Plan covered usage item (Always a negative value) |
 
-    Adding this two fields to the filter will sum the amount of money the customer is being charged in the period for the Savings Plan commitment plus the amount of money that is being discounted. Resulting in a negativa value.
+    Adding this two fields to the filter will sum the amount of money the customer is being charged in the period for the Savings Plan commitment plus the amount of money that is being discounted. Resulting in a negative value.
 
     For further information visit: https://docs.aws.amazon.com/cur/latest/userguide/cur-sp.html
 
@@ -215,6 +226,16 @@ For this visualization, we will use the following fields (or columns of data):
 39. Click on **Show as: Number**, then click on **Currency**
 
     <img src="../images/qs-set-currency.png" alt="drawing" width="450"/>
+
+    Your visualization should look like:
+
+    <img src="../images/blended-cost.png" alt="drawing" width="350"/>
+
+    And your dashaboard should look like:
+
+    <img src="../images/dashboard-3graphs.png" alt="drawing" width="700"/>
+    
+    
 
 ---
 
@@ -290,5 +311,7 @@ You could find further details about the AWS Cost and Usage Reports data diction
 **Congratulations**, you have finished the Lab 5 and the Well-Architected Workshop!
 
 ---
+
+Once you have this kind of analysis, you will want to add more measuring and monitoring controls so that you can get better insights for IT costs on workloads, which is aligned with the **Analyze and attribute expenditure** desing principle.
 
 Using the appropriate services, instances and resources for your workload is key to cost savings. A well-architected workload uses the most cost-effective resources, which can have a significant and positive economic impact. You also have the opportunity to use managed services to reduce costs. AWS offers a variety of flexible and cost-effective pricing options to acquire instances from EC2 and other services in a way that best fits your needs.
