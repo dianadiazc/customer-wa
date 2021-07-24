@@ -11,26 +11,22 @@ The Security pillar encompasses the ability to protect data, systems, and assets
 <img src="images/sec.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-Security is the number 1 priority for The New Company customer . According to the Well-Architected Framework Review (WAFR), you as an AWS Partner recommend to implement some cloud native controls to prevent and detect security issues. 
+Security is our top priority and is also for The New Company customer . According to the Well-Architected Framework Review (WAFR), you as an AWS Partner recommend to implement some cloud native controls to prevent and detect security issues.
 {{% /notice %}}
 
 ## Objective
 
-In this hands-on activity, you will identify which cloud-native solutions can mitigate the risks while providing scalability, reliability, and cost optimization at a low operational burden. During this Lab, mainly you will apply the **Enable traceability** desing principle, learning how to use cloud native controls like CloudTrail, Security Groups, GuardDuty and Systems Manager, to secure the cloud architecture. 
+In this hands-on activity, you will identify which cloud-native solutions can mitigate the risks while providing scalability, reliability, and cost optimization at a low operational burden. During this Lab, mainly you will apply the **Enable traceability** design principle, learning how to use cloud native controls like AWS CloudTrail, Security Groups, Amazon  GuardDuty and AWS Systems Manager, to secure the cloud architecture.
 
 ## Services
 
-AWS CloudTrail, AWS Config, Amazon VPC, Systems Manager
+AWS CloudTrail, AWS Config, Amazon GuardDuty, Amazon VPC, AWS Systems Manager.
 
 ## Prerequisites
 
-You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
+You will run this Lab at an AWS sponsored workshop, and you will be provided with an AWS Account to perform all the tasks in the following section.
 
-It is strongly recommended to run **Lab 1: Operational Excellence** and **Lab 2: Reliability** in this workshop to perform this Lab. In case you cannot complete Lab 2 before performing this Lab, you could execute the activities, however you will see a different configuration in your console compared to the one in the instructions. 
-
-## Duration
-
-Estimated time to complete: 1 hour
+It is strongly recommended to run **Lab 1: Operational Excellence** and **Lab 2: Reliability** in this workshop to perform this Lab. In case you cannot complete Lab 2 before performing this Lab, you could execute the activities, however you will see a different configuration in your console compared to the one in the instructions.
 
 ## Tasks
 

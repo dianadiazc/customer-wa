@@ -5,7 +5,7 @@ weight = 2
 +++
 Let's review and improve upon granular control of communication between workloads in the cloud.
 
-1. Looking at the granular control of system-to-system communication used to be difficult. Now, looking at your **EC2** Service **Security Groups** allows you to quickly see who can talk to whom.
+1. Looking at the granular control of system-to-system communication used to be difficult. Now, looking at your **EC2** Service, **Security Groups**, allows you to quickly see who can talk to whom.
 
 <img src="../images/sg1.png" alt="drawing" width="600"/>
 
@@ -13,11 +13,11 @@ Let's review and improve upon granular control of communication between workload
 
 <img src="../images/sg2.png" alt="drawing" width="600"/>
 
-3. Checking the **Outbound rules**, we see the servers can talk to a range of IP’s, 65,536 to be precise. But there are only maybe 6-8 servers that they actually need to talk to. We can start reducing that number editing the Destination rule. 
+3. Checking the **Outbound rules**, we see the servers can talk to a range of IP’s, 65,536 to be precise. But there are only maybe 6-8 servers that they actually need to talk to. We can start reducing that number editing the Destination rule.
 
 <img src="../images/sg3.png" alt="drawing" width="900"/>
 
-4. Go to **Edit Outbound rules** and **delete** the existing rule.
+4. Go to **Edit outbound rules**, then click on **Delete** to eliminate the existing rule.
 
 <img src="../images/sg5.png" alt="drawing" width="800"/>
 
@@ -27,7 +27,7 @@ Let's review and improve upon granular control of communication between workload
 
 <img src="../images/sg7.png" alt="drawing" width="800"/>
 
-6. For **Type**, select *"All Trafic"*. For **Destination**, look for the Security Group name **wa-web-server-dg** and select it. Click on **Save rule**.
+6. For **Type**, select *"All Trafic"*. For **Destination**, look for the Security Group name **wa-asg-sg** and select it. Click on **Save rule**.
 
 <img src="../images/sg9.png" alt="drawing" width="900"/>
 
@@ -35,8 +35,8 @@ Let's review and improve upon granular control of communication between workload
 
 <img src="../images/sg10.png" alt="drawing" width="800"/>
 
-You can **repeat** this by **Editing** and **Adding Rules** for each security group you want to allow access to.
+If you want, you can practice more and repeat this steps by **Editing** and **Adding Rules** for each security group that you want to allow or deny access.
 
 {{% notice note %}}
-In doing this, you’ve reduced the scope of internal traffic communication from 65,636 host down to 8. Additionally, if you ever need to stand up more servers in these groups, they would be automatically accessible without intervention, as long as you put them in the same Security Group. On premise, you would either need to have Firewalls between all internal VLAN’s, Routers, and sites or complex Network ACL’s on every switch in your environment. This reduces the risk of threats, the risk of misconfiguration, and the operational burden all at once.
+In doing this, you’ve reduced the scope of internal traffic communication from 65,636 host down to 8. Additionally, if you ever need to stand up more servers in these groups, they would be automatically accessible without intervention, as long as you associate them in the same Security Group. But on premise, you would either need to have Firewalls between all internal VLAN’s, Routers, and sites or complex Network ACL’s on every switch in your environment. This reduces the risk of threats, the risk of misconfiguration, and the operational burden all at once.
 {{% /notice %}}
