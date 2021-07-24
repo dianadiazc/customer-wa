@@ -18,7 +18,7 @@ SSM Agent is preinstalled, by default, on the following Amazon Machine Images (A
 
 * Ubuntu Server 16.04, 18.04, and 20.04
 
-In this lab we will use Amazon Linux 2 AMIs. For manually installation of the SSM agent you can review the following link: 
+In this lab we will use Amazon Linux 2 AMIs. For manual installation of the SSM agent review the following link: 
 
 https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html
 
@@ -41,7 +41,7 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 <img src="../images/ip3.png" alt="drawing" width="700"/>
 
-4. Add the following Managed Policies:
+4. Add the following Managed Policies by selecting them after searching `amazonssm` and `cloudwatchagent` in the search text box. 
 
 * AmazonSSMManagedInstanceCore
 * CloudWatchAgentServerPolicy
@@ -85,7 +85,7 @@ To ensure that your instances will be available in Systems Manager, please **reb
 11. Scroll down to the bottom page. On *Corresponding managed instances*, you will see your Amazon EC2 instances. Now you can use Systems Manager to automate operational tasks on your EC2 instances.
 
 {{% notice info %}}
-**NOTE:** After modifying the instance profiles and restarting instances, it may take up to 5 minutes for the instances to appear in the managed instances inventory.
+After modifying the instance profiles and restarting instances, **it may take up to 5 minutes for the instances to appear** in the managed instances inventory.
 {{% /notice %}}
 
 <img src="../images/ip11.png" alt="drawing" width="800"/> 

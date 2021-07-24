@@ -6,7 +6,7 @@ weight = 5
 
 The CloudWatch agent monitors activity on your EC2 instance to collect logs and metrics. The CloudWatch agent needs to be installed on the EC2 instance using AWS Systems Manager Run Command. Run Command enables you to perform actions on EC2 instances remotely. This tool is especially helpful at scale, where you can manage the configuration of many instances with a single command. 
 
-1. In *Systems Manager* go again to the navigation pane, choose **Run command**
+1. In *Systems Manager* go to the navigation pane, choose **Run command**
 
 <img src="../images/cw1.png" alt="drawing" width="800"/> 
 
@@ -39,6 +39,6 @@ You will see the installation progress for the Amazon CloudWatch agent in both E
 <img src="../images/cw7.png" alt="drawing" width="800"/> 
 
 {{% notice tip %}}
-Reference: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance-fleet.html
-*Section: Download the CloudWatch Agent on an Amazon EC2 Instance Using Systems Manager*
+**Reference:** https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance-fleet.html
+**Section:** Download the CloudWatch Agent on an Amazon EC2 Instance Using Systems Manager*
 {{% /notice %}}

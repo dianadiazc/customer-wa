@@ -51,13 +51,13 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
 
 <img src="../images/lg11.png" alt="drawing" width="1000"/> 
 
-You have finished this first Lab. Awesome, right? :)
+**You have finished this first Lab!** Awesome, right? :)
 
 ---
 
 In a traditional environment you would have to set up the systems and software to perform administration activities. You would require a server to execute your scripts. You would need to manage authentication credentials across all of your systems.
 
-**Operations as code** reduces the resources, time, risk, and complexity of performing operations tasks and ensures consistent execution. You can take operations as code and automate operations activities by using scheduling and event triggers. Through integration at the infrastructure level you avoid “swivel chair” processes that require multiple interfaces and systems to complete a single operations activity.
+**Operations as code** reduces the resources, time, risk, and complexity of performing operations tasks and ensures consistent execution, so **your organization can focus on delivering more value to customers vs operational firefighting**. You can take operations as code and automate operations activities by using scheduling and event triggers. Through integration at the infrastructure level you avoid “swivel chair” processes that require multiple interfaces and systems to complete a single operations activity.
 
 
 

@@ -20,14 +20,14 @@ You will see two EC2 instances, one for the web server and other one for the dat
 
 <img src="../images/instances.png" alt="drawing" width="600"/>
 
-3.  Now we are going to check that the Product catalog web application is up and running. Select your web server instance and copy the public DNS:
+3.  Now we are going to check that the Product catalog web application `(wa-web-server)`  is up and running. Select your web server instance and copy the public DNS:
 
 <img src="../images/dns.png" alt="drawing" width="600"/>
 
 4. Paste the public DNS in a web browser. You will see that the Product Catalog web application. 
 
 {{% notice info %}}
-Please ensure that you are using **http** to access the Application, as some browsers use *https* by default
+Please ensure that you are using **http** to access the Application, as some browsers use *https* by default.
 {{% /notice %}}
 
 <img src="../images/app.png" alt="drawing" width="600"/>
