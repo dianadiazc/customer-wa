@@ -14,12 +14,19 @@ curl -o wa-asg-assume-role-policy-doc.json https://ee-assets-prod-us-east-1.s3.u
 curl -o wa-asg-policy-doc.json https://ee-assets-prod-us-east-1.s3.us-east-1.amazonaws.com/modules/6cfbb89d4a74400082ad348b4ec61df1/v1/wa-asg-policy-doc.json
 
 aws iam create-policy --policy-name wa-asg-policy --policy-document file://wa-asg-policy-doc.json
+
 aws iam create-role --role-name wa-asg-instance-role --assume-role-policy-document file://wa-asg-assume-role-policy-doc.json
+
 export awsAccount=`aws sts get-caller-identity --query "Account" --output text`
+
 aws iam attach-role-policy --role-name wa-asg-instance-role --policy-arn arn:aws:iam::$awsAccount:policy/wa-asg-policy
+
 aws iam attach-role-policy --role-name wa-asg-instance-role --policy-arn arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+
 aws iam attach-role-policy --role-name wa-asg-instance-role --policy-arn arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
+
 aws iam create-instance-profile --instance-profile-name "wa-asg-instance-profile"
+
 aws iam add-role-to-instance-profile --instance-profile-name "wa-asg-instance-profile" --role-name "wa-asg-instance-role"
 ```
 
@@ -39,11 +46,12 @@ aws ec2 authorize-security-group-ingress --group-id $asgSg --source-group $albSg
 aws ec2 authorize-security-group-ingress --group-id $rdsSg --source-group $asgSg --protocol "tcp" --port "3306"
 ```
 
-4. Create the Launch Template.
+4. Create the Launch Template that will be user by the EC2 Auto Scaling group.
 
 ```sh
 curl -o waLaunchTemplate-source.json https://ee-assets-prod-us-east-1.s3.us-east-1.amazonaws.com/modules/6cfbb89d4a74400082ad348b4ec61df1/v1/waLaunchTemplate-source.json
 
+sudo yum install gettext -y
 envsubst < "waLaunchTemplate-source.json" > "waLaunchTemplate.json"
 
 aws ec2 create-launch-template --launch-template-name "waLaunchTemplate" --launch-template-data file://waLaunchTemplate.json

@@ -4,13 +4,13 @@ chapter = false
 weight = 3 
 +++
 
-1. Validate RDS instance endpoint is available.
+1. The forst step in this task is to validate if the RDS instance URL endpoint is already available, usually takes ~3-4 minutes after the RDS instance creation command. Run the below command to confirm if the RDS endpoint is available
 
 ```sh
 aws rds describe-db-instances --db-instance-identifier "waDbInstance" --query 'DBInstances[*].Endpoint.Address' --output text --region us-west-2
 ```
 {{% notice warning %}}
-If the output of the command above is null, please wait a little bit more, it shoult take 3-4 minutes.
+If the output of the command above is null please wait a little bit more. After you get the enpoint URL as the command output you can continue with the following lab steps.
 {{% /notice %}}
 
 

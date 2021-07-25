@@ -22,14 +22,14 @@ export waLaunchTemplate=`aws ec2 describe-launch-templates --launch-template-nam
 aws autoscaling create-auto-scaling-group --auto-scaling-group-name "waAutoscaleGroup" --launch-template LaunchTemplateId=$waLaunchTemplate --min-size "2" --max-size "4" --target-group-arns $waTg --vpc-zone-identifier "$asgSubnet1Id,$asgSubnet2Id"
 ```
 
-2. Go to **EC2** service and validate that a couple of new instances are being created.
+2. Go to **EC2** service and after ~2-3 minutes you could see that a couple of new instances are being created. Make sure to refresh the page to see the updated instance information.
 
 <img src="../images/ssm7.png" alt="drawing" width="900"/>
 
-3. From the left pane, select **Load Balancers** and click on **DNS name** icon. 
+3. From the left pane, select **Load Balancers** and click on **DNS name** icon.
 
 <img src="../images/dns2.png" alt="drawing" width="800"/>
 
-4. Paste the ELB DNS name in a web browser and insert a couple items to test the application.
+4. Paste the ELB DNS name in a web browser. The application may take a couple of minutes to be fully deployed, before that you could get a "502 Bad Gateway" error, this is because the instances are still bootstrapping and the ELB has not registered them yet. After you see the application displayed please insert a couple of new items to validate the application is working correctly.
 
 <img src="../images/app4.png" alt="drawing" width="800"/>

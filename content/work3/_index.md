@@ -11,12 +11,12 @@ The reliability pillar encompasses the ability of a workload to perform its inte
 <img src="images/rel.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-During the Well-Architected Framework Review (WAFR) you explained to **The New Company** about how important is to build a resilent solution as required to protect against failure. The customer understood the risks and business impact in case of failure. They trust your criteria as an APN Partner to recommend them the best resilient architecture. 
+During the Well-Architected Framework Review (WAFR) you explained to **The New Company** about how important is to build a resilient solution as required to protect against failure. The customer understood the risks and business impact in case of failure. They trust your criteria as an APN Partner to recommend them the best resilient architecture. 
 {{% /notice %}}
 
 ## Objective
 
-This hands-on lab will guide you through the steps to improve reliability of a service by using automation to deploy a reliable cloud infrastructure. You will create additional subnets in a second Availability Zone, an ELB and an Auto Scaling group for the Web Application, applying the **Scale horizontally to increase aggregate workload availability** desing principle from the Well-Architected Framework. You will also migrate the database to RDS enabling multi-AZ. When your architecture is ready you will test it to ensure your implementation is resilient to failure, applying the **Testing recovery procedures** design principle.
+This hands-on lab will guide you through the steps to improve reliability of a service by using automation to deploy a reliable cloud infrastructure. You will create additional subnets in a second Availability Zone, an ELB and an Auto Scaling group for the Web Application, applying the **Scale horizontally to increase aggregate workload availability** design principle from the Well-Architected Framework. You will also migrate the database to RDS enabling multi-AZ. When your architecture is ready you will test it to ensure your implementation is resilient to failure, applying the **Testing recovery procedures** design principle.
 
 ## Services
 

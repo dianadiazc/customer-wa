@@ -67,3 +67,14 @@ Multi-AZ RDS creation will take **~10-15 minutes**. Please go ahead and continue
 7. After executing previous command, you will see **:** at the bottom of the screen. Just type **q** to quit of that process and continue using the AWS CloudShell for the subsequent steps. Multi-AZ RDS creation process will continue.
 
 <img src="../images/rds1.png" alt="drawing" width="400"/>
+
+8. The above command will create an RDS database instance with the following configuration:
+
+| Key | Value  |
+|---|---|
+| Identifier  | waDbInstance |
+| Engine | MariaDB |
+| DB instance type | db.t3.micro |
+| Storage | 20 GB |
+| Multi-AZ | Yes |
+| Publicly accessible | No |

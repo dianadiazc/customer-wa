@@ -29,27 +29,33 @@ There are two EC2 instances running with a name beginning with `wa-auto*`. For t
 
 ## EC2 Failure injection
 
-4. Go back to **AWS CloudShell**. Run this commands to get instances IDs in your Auto Scaling Group.
+4. Go back to **AWS CloudShell**. Run this commands to get instances launched by the Auto Scaling group.
 
 ```sh
 aws ec2 describe-instances --filters Name=tag:Name,Values=wa-auto-scale-group --query 'Reservations[].Instances[*].{InstanceID:InstanceId,Type:InstanceType,AZ:Placement.AvailabilityZone,PrivateIP:PrivateIpAddress,Subnet:SubnetId,Time:LaunchTime,State:State.Name}' --output table
 ```
-The output should look like: 
+
+The output should look like:
 
 <img src="../images/ec2-1.png" alt="drawing" width="1000"/>
 
-5. Pick one of the instance IDs and replace it in the following command. This command will **terminate** the instance that you chose. This will be an **EC2 failure injection**, which simulates a critical problem with one of the two web servers used by your service.
+5. Choose one of the instance IDs and replace it in the following command. This command will **terminate** the instance that you choose. This will be an **EC2 failure injection**, which simulates a critical problem with one of the two web servers used by your service.
 
 ```sh
 aws ec2 terminate-instances --instance-ids <YOUR-INSTANCE-ID>
 ```
+
 <img src="../images/ec2-2.png" alt="drawing" width="800"/>
 
-6. Go to the web browser with the Applicaiton that you already have open. The Application should be responding normaly.
+{{% notice warning %}}
+If you get the error message "Credentials were refreshed, but the refreshed credentials are still expired." after running this command, close CloudShell window and open it again.
+{{% /notice %}}
+
+6. Go to the web browser with the Application that you already have open. The Application should be responding normaly.
 
 <img src="../images/chaos1.png" alt="drawing" width="600"/>
 
-7. Take a look at your EC2 instances. You will see that one of the instances is shutting-down.
+7. Take a look at your EC2 instances. Make sure the filter **Instance state:Running** is removed. After one minute of running the *terminate* command you will see one instance changing it's state to **shutting-down** and then **Terminated**. Make sure you refresh the page to see the updated instances information.
 
 <img src="../images/chaos4.png" alt="drawing" width="900"/>
 
@@ -61,7 +67,7 @@ aws ec2 terminate-instances --instance-ids <YOUR-INSTANCE-ID>
 
 * In the screen cap below the unhealthy instance is the newly added one. The load balancer will not send traffic to it until it is completed initialized. It will ultimately transition to healthy and then start receiving traffic.
 
-* Note the new instance was started in the same Availability Zone as the failed one. Amazon EC2 Auto Scaling automatically maintains balance across all of the Availability Zones that you specify.
+* Note the new instance was launched in the same Availability Zone as the terminated one. Amazon EC2 Auto Scaling automatically maintains balance across all of the Availability Zones that you specify.
 
 <img src="../images/ec2-3.png" alt="drawing" width="1000"/>
 
@@ -71,7 +77,7 @@ aws ec2 terminate-instances --instance-ids <YOUR-INSTANCE-ID>
 
 * Later on, an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 1 to 2.
 
-<img src="../images/ec2-8.png" alt="drawing" width="900"/>
+<img src="../images/ec2-8-v2.png" alt="drawing" width="900"/>
 
 10. Go to Route53 to monitor the application health status.
 
@@ -84,6 +90,6 @@ No application downtime was observed during the test.
 
 **Congrats :)**. You have finished the second Lab of this workshop!
 
-Deploying multiple servers and Elastic Load Balancing enables a service suffer the loss of a server with no availability disruptions as user traffic is automatically routed to the healthy servers. Amazon Auto Scaling ensures unhealthy hosts are removed and replaced with healthy ones to maintain high availability.
+Deploying multiple servers and Elastic Load Balancing enables a service to recover after the loss of an instance with no availability disruptions as traffic from user is automatically routed to healthy instances. Amazon Auto Scaling ensures unhealthy hosts are removed and replaced with healthy ones to maintain high availability.
 
 Availability Zones (AZs) are isolated sets of resources within a region, each with redundant power, networking, and connectivity, housed in separate facilities. Each Availability Zone is isolated, but the Availability Zones in a Region are connected through low-latency links. AWS provides you with the flexibility to place instances and store data across multiple Availability Zones within each AWS Region for high resiliency.

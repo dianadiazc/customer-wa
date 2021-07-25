@@ -16,6 +16,10 @@ In this task you will configure a health check to monitor the EC2 failure inject
 
 <img src="../images/r53-1.png" alt="drawing" width="600"/> 
 
+{{% notice info %}}
+At the top of the page you will see an error message "Route 53 couldn’t update the page". This is expected, you can safely continue with the following steps.
+{{% /notice %}}
+
 2. Click on **Health checks** and later on **Create health check**.
 
 <img src="../images/r53-2.png" alt="drawing" width="500"/>
@@ -57,6 +61,10 @@ In this task you will configure a health check to monitor the EC2 failure inject
 
 <img src="../images/r53-6.png" alt="drawing" width="600"/>
 
-6. To view the application health status select the health check, and in the below panel click on the **Monitoring** tab, after a couple of minutes you will see the app health check status is `1.0`
+{{% notice warning %}}
+If you get this error message "Error creating health check. Invalid fully qualified domain name: It may not contain reserved characters of RFC1738 ";/?:@=&"." confirm the **Domain name** does not include "http://"
+{{% /notice %}}
+
+6. To view the application health status select the health check you have just created, and in the below panel click on the **Monitoring** tab, after a couple of minutes you will see the app health check status. In the Health check status graph `1.0` will mean the application is **UP** and `0.0` will mean the application is **DOWN**.
 
 <img src="../images/r53-7.png" alt="drawing" width="600"/>

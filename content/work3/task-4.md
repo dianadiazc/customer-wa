@@ -48,6 +48,7 @@ export albArn=`aws elbv2 describe-load-balancers --names waAlb --query 'LoadBala
 ## Download template listener.json file
 curl -o listener-source.json https://ee-assets-prod-us-east-1.s3.us-east-1.amazonaws.com/modules/6cfbb89d4a74400082ad348b4ec61df1/v1/listener-source.json
 
+sudo yum install gettext -y
 envsubst < "listener-source.json" > "listener.json"
 
 aws elbv2 create-listener --load-balancer-arn $albArn --protocol "HTTP" --port 80 --default-actions file://listener.json 
