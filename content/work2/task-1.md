@@ -20,6 +20,10 @@ You will see two EC2 instances, one for the web server and other one for the dat
 
 <img src="../images/instances.png" alt="drawing" width="600"/>
 
+{{% notice warning %}}
+You will see an additional EC2 instance *wa-glue-server*. This instance is used as part of the Lab 5 setup and it will be terminated before you finish Lab 1.
+{{% /notice %}}
+
 3.  Now we are going to check that the Product catalog web application `(wa-web-server)`  is up and running. Select your web server instance and copy the public DNS:
 
 <img src="../images/dns.png" alt="drawing" width="600"/>

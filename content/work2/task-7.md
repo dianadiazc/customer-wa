@@ -13,7 +13,7 @@ weight = 7
 <img src="../images/lg2.png" alt="drawing" width="600"/> 
 
 {{% notice info %}}
-NOTE: It may take up to 5 minutes for metrics to appear in the dashboard.
+NOTE: It may take up to 5 minutes for metrics to appear in the dashboard. **Refresh** your browser in case you don't see **CWAgent** after a couple of minutes.
 {{% /notice %}}
 
 3. Select the first metrics group.

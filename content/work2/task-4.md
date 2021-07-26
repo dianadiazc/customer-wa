@@ -41,7 +41,7 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 <img src="../images/ip3.png" alt="drawing" width="700"/>
 
-4. Add the following Managed Policies by selecting them after searching `amazonssm` and `cloudwatchagent` in the search text box. 
+4. Add the following Managed Policies by selecting them after searching `AmazonSSMManagedInstanceCore` and `CloudWatchAgentServerPolicy` in the search text box. 
 
 * AmazonSSMManagedInstanceCore
 * CloudWatchAgentServerPolicy
