@@ -62,7 +62,7 @@ At the top of the page you will see an error message "Route 53 couldn’t update
 <img src="../images/r53-6.png" alt="drawing" width="600"/>
 
 {{% notice warning %}}
-If you get this error message "Error creating health check. Invalid fully qualified domain name: It may not contain reserved characters of RFC1738 ";/?:@=&"." confirm the **Domain name** does not include "http://"
+If you get this error message "Error creating health check. Invalid fully qualified domain name: It may not contain reserved characters of RFC1738 ";/?:@=&"." confirm the **Domain name** does not include "http://". The best option here is to copy the **DNS name** in the Load Balancer information from the **EC2 console**. 
 {{% /notice %}}
 
 6. To view the application health status select the health check you have just created, and in the below panel click on the **Monitoring** tab, after a couple of minutes you will see the app health check status. In the Health check status graph `1.0` will mean the application is **UP** and `0.0` will mean the application is **DOWN**.
