@@ -11,7 +11,7 @@ These labs are designed *to be completed in sequence*, and the full set of instr
 
 ## The context
 
-You work for an AWS Partner, and have a new customer, AnyCompany, which is a retail business. One of the main apps for the company is a product catalog; a web application that they recently migrated to the AWS Cloud from their on-premises environment. Even though the application is functional, the customer wants to have an architecture with best practices applied, because the business is growing. They are looking for an architecture that meets the new performance requirements, mitigates risks, and saves money. For them, it is crucial to use automation. 
+You work for an AWS Partner, and have a new customer, **AnyCompany**, which is a retail business. One of the main apps for the company is a product catalog; a web application that they recently migrated to the AWS Cloud from their on-premises environment. Even though the application is functional, the customer wants to have an architecture with best practices applied, because the business is growing. They are looking for an architecture that meets the new performance requirements, mitigates risks, and saves money. For them, it is crucial to use automation. 
 
 The following is the initial architecture that you have found. Your mission is to improve upon it by applying some of the Well-Architected principles, according to the company’s needs.
 
