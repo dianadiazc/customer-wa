@@ -13,8 +13,8 @@ The Performance Efficiency pillar includes the ability to use computing resource
 
 
 {{% notice note %}}
-Starting with the Well-Architected Framework Review executed to our customer, we have the information about the decision to use the t2.micro instance. Also, **The New Company** wants to perform stress tests to be prepared for an increment in the demand in a near future.
-Based on than information, the objective of this module is to identify how The New Company can create and operate their infrastructure with the best performance, while maintaining the alignment to the business and technical needs. 
+Starting with the Well-Architected Framework Review executed to our customer, we have the information about the decision to use the t2.micro instance. Also, **AnyCompany** wants to perform stress tests to be prepared for an increment in the demand in a near future.
+Based on than information, the objective of this module is to identify how AnyCompany can create and operate their infrastructure with the best performance, while maintaining the alignment to the business and technical needs. 
 {{% /notice %}}
 
 ## Objective

@@ -11,7 +11,7 @@ The Cost Optimization pillar includes the ability to run systems to deliver busi
 <img src="images/cost.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-**The New Company** would like to have a clear visibility about costs and usage for the AWS Services. They would like to use a flexible tool for creating their own dashboards according to their needs. They understand that they need a new way of analyzing expenditures to make informed decisions about cost tradeoffs.
+**AnyCompany** would like to have a clear visibility about costs and usage for the AWS Services. They would like to use a flexible tool for creating their own dashboards according to their needs. They understand that they need a new way of analyzing expenditures to make informed decisions about cost tradeoffs.
 {{% /notice %}}
 
 ## Objective

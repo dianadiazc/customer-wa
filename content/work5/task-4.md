@@ -17,7 +17,7 @@ curl -o run-stress-test.sh https://ee-assets-prod-us-east-1.s3.us-east-1.amazona
 chmod +x run-stress-test.sh
 ```
 {{% notice note %}}
-According to their business growth plans, for **The New Company**, this stress test could represent a simulation of the expected traffic that they could have in the near future.
+According to their business growth plans, for **AnyCompany**, this stress test could represent a simulation of the expected traffic that they could have in the near future.
 {{% /notice %}}
 
 
@@ -56,7 +56,7 @@ aws ssm describe-instance-information --output text --query "InstanceInformation
 7.	After the script finishes running, the instances count in the auto scaling group and their CPU% utilization will get back to normal.
 
 {{% notice info %}}
-One of the more important aspects about monitoring performance and runnnig experiments is that **you can use data to make fact-based decisions about your architecture**. In the case of The New Company and according to the insights that you got in this Lab: **What would you recommend to the customer?** If the customer want to meet the demand in the near future, should the customer change the EC2 instance type? Should the customer increase the maximum limit configuration for the EC2 Auto Scaling Group? Are there other activities to do before making decisions?
+One of the more important aspects about monitoring performance and runnnig experiments is that **you can use data to make fact-based decisions about your architecture**. In the case of AnyCompany and according to the insights that you got in this Lab: **What would you recommend to the customer?** If the customer want to meet the demand in the near future, should the customer change the EC2 instance type? Should the customer increase the maximum limit configuration for the EC2 Auto Scaling Group? Are there other activities to do before making decisions?
 {{% /notice %}}
 
 ---

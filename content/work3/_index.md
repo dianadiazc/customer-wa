@@ -11,7 +11,7 @@ The reliability pillar encompasses the ability of a workload to perform its inte
 <img src="images/rel.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-During the Well-Architected Framework Review (WAFR) you explained to **The New Company** about how important is to build a resilient solution as required to protect against failure. The customer understood the risks and business impact in case of failure. They trust your criteria as an APN Partner to recommend them the best resilient architecture. 
+During the Well-Architected Framework Review (WAFR) you explained to **AnyCompany** about how important is to build a resilient solution as required to protect against failure. The customer understood the risks and business impact in case of failure. They trust your criteria as an APN Partner to recommend them the best resilient architecture. 
 {{% /notice %}}
 
 ## Objective
