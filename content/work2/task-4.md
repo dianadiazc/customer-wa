@@ -62,11 +62,11 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-prof
 
 7. For *IAM Role*, select <code>wa-lab-ssm-ec2-role</code> and click on **Save**
 
-<img src="../images/ip8.png" alt="drawing" width="8000"/>
+<img src="../images/ip8.png" alt="drawing" width="600"/>
 
 8. Repeat the steps **6** and **7** with *wa-db-server* instance.
 
-<img src="../images/ip81.png" alt="drawing" width="8000"/>
+<img src="../images/ip81.png" alt="drawing" width="600"/>
 
 {{% notice warning %}}
 To ensure that your instances will be available in Systems Manager, please **reboot** both **EC2 instances**. 
