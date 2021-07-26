@@ -90,6 +90,8 @@ After modifying the instance profiles and restarting instances, **it may take up
 
 <img src="../images/ip11.png" alt="drawing" width="800"/> 
 
+Make sure that both instances `wa-db-server`and `wa-web-server`appear in your inventory before moving to the next Task. Remember that in case you do not see them, you should reboot them.
+
 
 
 
