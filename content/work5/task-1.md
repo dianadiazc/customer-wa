@@ -12,7 +12,7 @@ After taking actions over Operations Excellence, Resiliency and Security, we are
 
 <img src="../images/T01S01.png" alt="drawing" width="600"/>
 
-2. Left pane, click on **Alarms**.
+2. Left pane, click on **Alarms** and later click on **In alarm**.
 
 <img src="../images/T01S02.png" alt="drawing" width="600"/>
 
