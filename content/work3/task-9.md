@@ -55,7 +55,7 @@ If you get the error message "Credentials were refreshed, but the refreshed cred
 
 <img src="../images/chaos1.png" alt="drawing" width="600"/>
 
-7. Take a look at your EC2 instances. Make sure the filter **Instance state:Running** is removed. After one minute of running the *terminate* command you will see one instance changing it's state to **shutting-down** and then **Terminated**. Make sure you refresh the page to see the updated instances information.
+7. Take a look at your EC2 instances. Make sure the filter **Instance state:Running** is removed. After one minute of running the *terminate* command you will see one instance changing its state to **shutting-down** and then **Terminated**. Make sure you refresh the page to see the updated instances information.
 
 <img src="../images/chaos4.png" alt="drawing" width="900"/>
 

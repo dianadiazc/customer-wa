@@ -32,7 +32,7 @@ This is the expected output:
 
 <img src="../images/rdsstatus.png" alt="drawing" width="200"/>
 
-If the status is **creating** or **modifying** please wait a little more before continue with the next step.
+If the status is **creating** or **modifying** please wait a little more before continuing with the next step.
 
 3. Go to **Systems Manager**
 

@@ -76,6 +76,10 @@ Select **Inbound rules** and **Edit inbound rules**.
 
 <img src="../images/nacl11.png" alt="drawing" width="1000"/>
 
+12. Let's check at this point that the application is working after networking changes. (Optional) You could add more items in this step.
+
+<img src="../images/chaos1.png" alt="drawing" width="600"/>
+
 {{% notice note %}}
 Now, you've effectively ensured that if the Load Balancers in your environment misbehave, they can't communicate with or compromise the Database servers directly. But there was no additional hardware, firewall, or complex routing required to make this simple change in the simple network topology.
 {{% /notice %}}
