@@ -10,7 +10,7 @@ At the end of this task, we should validate the automated actions we configure a
 
 <img src="../images/T04S01.png" alt="drawing" width="600"/>
 
-2.	We have a pre created script that you will use to increase the instances CPU% utilization and trigger the scale-out alarm and action. Run this commands from the **CloudShell** console to download the bash script and enable it to be executed.
+2.	We have a pre-created script that you will use to increase the instances CPU% utilization and trigger the scale-out alarm and action. Run this commands from the **CloudShell** console to download the bash script and enable it to be executed.
 
 ```sh
 curl -o run-stress-test.sh https://ee-assets-prod-us-east-1.s3.us-east-1.amazonaws.com/modules/6cfbb89d4a74400082ad348b4ec61df1/v1/run-stress-test.sh

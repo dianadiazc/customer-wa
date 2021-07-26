@@ -46,7 +46,7 @@ If the status is **creating** or **modifying** please wait a little more before 
 
 <img src="../images/ssm2.png" alt="drawing" width="800"/> 
 
-6. In the **Command parameters** section, paste commands below. Note that we are using Secrets Manager (created at lab deployment) to pull the RDS Database masteruser password and Parameter Store (also precreated at lab launch) to pull the RDS instance endpoint.
+6. In the **Command parameters** section, paste commands below. Note that we are using Secrets Manager (created at lab deployment) to pull the RDS Database masteruser password and Parameter Store (also pre-created at lab launch) to pull the RDS instance endpoint.
 
 ```sh
 #!/bin/bash

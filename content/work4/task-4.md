@@ -26,7 +26,7 @@ We just made a bunch of changes, and on-premises it may be difficult to track th
 
 <img src="../images/ct7.png" alt="drawing" width="900"/>
 
-6. I can see all of my resources, including some called **EC2 NetworkAcl**.
+6. You will see all of your resources, including some called **EC2 NetworkAcl**. If you are not able to see the resources, wait until the list is populated. 
 
 <img src="../images/cg1.png" alt="drawing" width="600"/>
 
