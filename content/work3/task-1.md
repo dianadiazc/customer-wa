@@ -15,7 +15,7 @@ At the end of this task this will be the lab architecture:
 <img src="../images/lab2-task1.png" alt="drawing" width="600"/>
 
 {{% notice note %}}
-Even though you can create subnets, load balancers, auto scaling groups and other application components using the AWS Console, in this Lab we are going to take advantage of the benefits of automation using commands in the **AWS CLI**.
+Even though you can create subnets, load balancers, auto scaling groups and other application components using the AWS Console, in this Lab we are going to take advantage of the benefits of automation using commands in the **AWS CLI** using **AWS CloudShell**.
 {{% /notice %}}
 
 1. Make sure that your AWS console session is using Oregon region. This lab uses Oregon (us-west-2) as the default region.
