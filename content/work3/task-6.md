@@ -46,7 +46,7 @@ aws ec2 authorize-security-group-ingress --group-id $asgSg --source-group $albSg
 aws ec2 authorize-security-group-ingress --group-id $rdsSg --source-group $asgSg --protocol "tcp" --port "3306"
 ```
 
-4. Create the Launch Template that will be user by the EC2 Auto Scaling group.
+4. Create the Launch Template that will be used by the EC2 Auto Scaling group.
 
 ```sh
 curl -o waLaunchTemplate-source.json https://ee-assets-prod-us-east-1.s3.us-east-1.amazonaws.com/modules/6cfbb89d4a74400082ad348b4ec61df1/v1/waLaunchTemplate-source.json
