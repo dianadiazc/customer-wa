@@ -35,7 +35,6 @@ Let's review and improve upon granular control of communication between workload
 
 <img src="../images/sg10.png" alt="drawing" width="800"/>
 
-If you want, you can practice more and repeat this steps by **Editing** and **Adding Rules** for each security group that you want to allow or deny access.
 
 {{% notice note %}}
 In doing this, you’ve reduced the scope of internal traffic communication from 65,636 host down to 8. Additionally, if you ever need to stand up more servers in these groups, they would be automatically accessible without intervention, as long as you associate them in the same Security Group. But on premise, you would either need to have Firewalls between all internal VLAN’s, Routers, and sites or complex Network ACL’s on every switch in your environment. This reduces the risk of threats, the risk of misconfiguration, and the operational burden all at once.
