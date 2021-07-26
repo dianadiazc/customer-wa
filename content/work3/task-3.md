@@ -9,8 +9,12 @@ weight = 3
 ```sh
 aws rds describe-db-instances --db-instance-identifier "waDbInstance" --query 'DBInstances[*].Endpoint.Address' --output text --region us-west-2
 ```
+Output should look similar to the following image: 
+
+<img src="../images/rds-end.png" alt="drawing" width="900"/>
+
 {{% notice warning %}}
-If the output of the command above is null please wait a little bit more. After you get the enpoint URL as the command output you can continue with the following lab steps.
+If the output of the command above is null please wait a little bit more. After you get the endpoint URL as the command output you can continue with the following lab steps.
 {{% /notice %}}
 
 

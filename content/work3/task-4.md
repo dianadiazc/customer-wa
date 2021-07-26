@@ -4,9 +4,9 @@ chapter = false
 weight = 4 
 +++
 
-A **load balancer** serves as the single point of contact for clients. The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones. This increases the availability of your application. 
+A **Elastic Load Balancer (ELB)** serves as the single point of contact for clients. The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones. This increases the availability of your application. 
 
-In this task you are going to create an *Application Load Balancer (ALB)* and a *Target group* that you will use when configuring the Auto Scaling Group later in this Lab. 
+In this task you are going to create a type of ELB called an *Application Load Balancer (ALB)* and a *Target group* that you will use when configuring the Auto Scaling Group later in this Lab. 
 
 After performing steps in this Lab, you will have the following architecture:
 

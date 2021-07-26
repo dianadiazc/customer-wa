@@ -26,7 +26,7 @@ Amazon EC2, Amazon RDS (Multi-AZ), ELB, EC2 Auto Scaling Groups, AWS Secrets Man
 
 You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
 
-You will use Systems Manager in this Lab, therefore it is strongly recommended to run **Lab 1: Operational Excellence** in this workshop to perform this Lab. In case you cannot run all tasks in Lab 1, ensure to run *Task 4: Enabling SSM for EC2 instances*.
+You will use Systems Manager in this Lab, therefore it is strongly recommended to run **Lab 1: Operational Excellence** in this workshop to perform this Lab. **In case you cannot run all tasks in Lab 1, ensure to run Task 1: Checking the existing architecture and Task 4: Enabling SSM for EC2 instances**.
 
 ## Duration
 
