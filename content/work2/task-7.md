@@ -20,7 +20,7 @@ NOTE: It may take up to 5 minutes for metrics to appear in the dashboard. **Refr
 
 <img src="../images/lg3.png" alt="drawing" width="600"/> 
 
-4. Select one of the paths to check disk utilization percentage in the last hour.
+4. Select one of the paths to check disk utilization percentage in the last hour. It is normal if your Graphed metrics are empty, you have a new environment at this point. 
 
 <img src="../images/lg4.png" alt="drawing" width="800"/> 
 
