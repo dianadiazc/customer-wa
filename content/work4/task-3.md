@@ -51,7 +51,7 @@ Security Groups are awesome at allowing access, but in **VPC** Services, **Ne
 
 Click on **Add new rule**, add information per rule and click on **Save changes**.
 
-<img src="../images/nacl7.png" alt="drawing" width="1000"/>
+<img src="../images/nacl25.png" alt="drawing" width="1000"/>
 
 8.  After **Saving** you need to allow access to that subnet from the internet, so recreating the **All Traffic Allow** rule for **Inbound Rules** is necessary.
 
