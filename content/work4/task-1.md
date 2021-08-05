@@ -20,6 +20,12 @@ We are going to create a trail to capture **All Read/Write** events which would 
 
 <img src="../images/ct2.png" alt="drawing" width="600"/>
 
+{{% notice warning %}}
+You will see a warning in your console: *"The option to create an organization trail is not available for this AWS account. Learn more
+com.amazonaws.services.organizations.model.AccessDeniedException: You don't have permissions to access this resource. (Service: AWSOrganizations; Status Code: 400; Error Code: AccessDeniedException; Request ID: 0080f181-3022-4e69-af49-9d76a5dabd85; Proxy: null)".*  **You can safely ignore this warning and continue with the next step.**
+{{% /notice %}}
+
+
 4. We should save trail logs for further evaluation, so you would want to create a new S3 bucket and give it a unique name e.g. “cloudsecurity-demo-bucket-{yourname}”.
 
 * Trail Name : `All-API-Commands-across-all-Regions`
