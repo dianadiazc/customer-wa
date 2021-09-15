@@ -1,7 +1,7 @@
 +++ 
-title = "Task 6: Minimize admin access risk" 
+title = "Task 5: Minimize admin access risk" 
 chapter = false 
-weight = 6 
+weight = 5 
 +++
 
 Finally, let's further reduce administrative risks by reducing access and improving logging. With our current setup, there is still a risk of open administrative ports, right? It's a bigger risk if those ports are open to the internet and a smaller risk if open internally for malware to find. Can we find a way around this requirement?

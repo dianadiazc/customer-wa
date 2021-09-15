@@ -1,7 +1,7 @@
-# git remote add wellarch git@github.com:dianadiazc/wellarch.git
+# git remote add customer-wa git@github.com:dianadiazc/customer-wa.git
 # git branch -M main
-# git push -u wellarch main
+# git push -u customer-wa main
 
 git add .
 git commit -m "update"
-git push -u wellarch main
+git push -u customer-wa main

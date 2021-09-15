@@ -13,7 +13,7 @@ The Performance Efficiency pillar includes the ability to use computing resource
 
 
 {{% notice note %}}
-Starting with the Well-Architected Framework Review executed to our customer, we have the information about the decision to use the t2.micro instance. Also, **AnyCompany** wants to perform stress tests to be prepared for an increment in the demand in a near future.
+Starting with the Well-Architected Framework Review executed, we have the information about the decision to use the t2.micro instance. Also, **AnyCompany** wants to perform stress tests to be prepared for an increment in the demand in a near future.
 Based on than information, the objective of this module is to identify how AnyCompany can create and operate their infrastructure with the best performance, while maintaining the alignment to the business and technical needs. 
 {{% /notice %}}
 
@@ -28,12 +28,6 @@ You will visualize and set thresholds to check the performance for the infrastru
 ## Services
 
 Amazon CloudWatch, AWS Auto Scaling.
-
-## Prerequisites
-
-You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
-
-You should run **Lab 2: Reliability** in this workshop before performing this Lab. 
 
 ## Duration
 

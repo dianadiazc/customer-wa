@@ -80,20 +80,6 @@ Now that we’ve got good logging of the Control Plane (API commands and Changes
 You can close the Welcome box that it is open after the Confirmation. 
 {{% /notice %}}
 
-11. Then, let us use a Service like **GuardDuty** to monitor logs in near real time for security anomalies. Go to Service search box > GuardDuty.
-
-<img src="../images/ct11.png" alt="drawing" width="800"/>
-
-12. After **Getting Started** we can quickly enable this service with just one click. It’s that easy. 
-
-<img src="../images/ct12.png" alt="drawing" width="600"/>
-
-13. We are going to **Enable GuardDuty** 30 day free trial. 
-
-<img src="../images/ct16.png" alt="drawing" width="600"/>
-
-We'll check out what GuardDuty is monitoring later in this lab.
-
 {{% notice note %}}
 When we looked at on-premises environment, we identified that there are disjointed security tooling, lack of insight into what’s going on in the environment, and difficulty managing change control and permissions in the environment, all led to risks becoming problems pretty fast. With the services we just enabled, we’ll see how we now have complete insight into who’s doing what in the environment, what changes are being made, and when problems start to arise.
 {{% /notice %}}

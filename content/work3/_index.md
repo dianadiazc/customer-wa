@@ -11,7 +11,7 @@ The reliability pillar encompasses the ability of a workload to perform its inte
 <img src="images/rel.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-During the Well-Architected Framework Review (WAFR) you explained to **AnyCompany** about how important is to build a resilient solution as required to protect against failure. The customer understood the risks and business impact in case of failure. They trust your criteria as an APN Partner to recommend them the best resilient architecture. 
+During the Well-Architected Framework Review (WAFR) you checked with other people at **AnyCompany** about how important is to build a resilient solution as required to protect against failure. Through those conversations, there was a clear understanding about the risks and business impact in case of failure. That is why you will help to implement a resilient architecture for the application. 
 {{% /notice %}}
 
 ## Objective
@@ -21,12 +21,6 @@ This hands-on lab will guide you through the steps to improve reliability of a s
 ## Services
 
 Amazon EC2, Amazon RDS (Multi-AZ), ELB, EC2 Auto Scaling Groups, AWS Secrets Manager
-
-## Prerequisites
-
-You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
-
-You will use Systems Manager in this Lab, therefore it is strongly recommended to run **Lab 1: Operational Excellence** in this workshop to perform this Lab. **In case you cannot run all tasks in Lab 1, ensure to run Task 1: Checking the existing architecture and Task 4: Enabling SSM for EC2 instances**.
 
 ## Duration
 

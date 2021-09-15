@@ -11,28 +11,27 @@ These labs are designed *to be completed in sequence*, and the full set of instr
 
 ## The context
 
-You work for an AWS Partner, and have a new customer, **AnyCompany**, which is a retail business. One of the main apps for the company is a product catalog; a web application that they recently migrated to the AWS Cloud from their on-premises environment. Even though the application is functional, the customer wants to have an architecture with best practices applied, because the business is growing. They are looking for an architecture that meets the new performance requirements, mitigates risks, and saves money. For them, it is crucial to use automation. 
+You work for **AnyCompany**, a retail business. One of the main apps for the company is a *product catalog;* a web application recently migrated to the AWS Cloud from the on-premises environment. Even though the application is functional, it is crucial to have an architecture with best practices applied, because the business is growing. As part of the Well-Architected practitioners team, you are looking for an architecture that meets the new performance requirements, mitigates risks, and saves money. Automation is also a fundamental part of the solution. 
 
-The following is the initial architecture that you have found. Your mission is to improve upon it by applying some of the Well-Architected principles, according to the company’s needs.
+The following is the initial architecture. Your mission is to improve upon it by applying some of the Well-Architected principles, according to the company’s needs.
 
 <img src="images/starting.png" alt="drawing" width="600"/>
 
 ## Architecture review
 
-You proposed doing a Well-Architected Framework Review (WAFR) of the customer’s environment to better understand the current status and their needs. After that review, you identified some insights, the most relevant of which are listed below:
+You proposed doing a Well-Architected Framework Review (WAFR) of the application’s environment to better understand the current status and the needs. After that review, you identified some insights, the most relevant of which are listed below:
 
-1. They are performing a lot of operational tasks manually. The customer wants to automate the process to provide visibility into some important performance metrics, like memory or disk utilization. Additionally, they need a centralized log monitoring for DB and App. 
-
-2.	It is clear for the customer that they need to have a highly available architecture.
-3.	Security is their top priority. The more insights they can have available related to this topic, the better.
+1. Most of the operational tasks are performed manually. AnyCompany wants to automate the process to provide visibility into some important performance metrics, like memory or disk utilization. Additionally, a centralized log monitoring for DB and App is needed. 
+2.	A highly available architecture is required for the product catalog application.
+3.	Security is a top priority. The more insights available related to this topic, the better.
 4.	They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. AnyCompany people want to do some stress tests for the application, especially because they are expecting an increase in the demand on the application in the near future.
-5.	Cost matters. The customer would like to have a clear visibility about costs and usage for the AWS Services. They would like to use a flexible tool for creating their own dashboards according to their needs. 
+5.	Cost matters. Other teams at AnyCompany are testing other apps, and have had some users launch EC2 instances with optimized resources, when they are not needed. This situation has increased the monthly bill. Therefore, some controls should be implemented in order to avoid this issue in the future. 
 
-The information above is your starting point to help this customer enhance the architecture and achieve their objectives. You may identify more opportunities for improvement in this architecture but, for the purposes of the workshop, just focus on these findings.
+The information above is your starting point to help enhancing the architecture and achieving organization objectives. You may identify more opportunities for improvement in this architecture but, for the purposes of the workshop, just focus on these findings.
 
 ## Target Architecture
 
-After a Well-Architected Framework Review (WAFR), you and AnyCompany have defined a target architecture. This architecture will help the customer achieve their initial objectives. You are going to utilize the five Well-Architected pillars to implement the following architecture:
+After a Well-Architected Framework Review (WAFR), a target architecture has been defined. This architecture will help AnyCompany to achieve their initial objectives. You are going to utilize the five Well-Architected pillars to implement the following architecture:
 
 <img src="images/target-up.png" alt="drawing" width="1200"/>
 

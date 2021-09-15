@@ -22,10 +22,6 @@ In this Lab, you will use AWS Systems Manager according to the **“Perform oper
 
 Amazon EC2, AWS Systems Manager, Amazon CloudWatch
 
-## Prerequisites
-
-You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section.
-
 ## Duration
 
 Estimated time to complete: 1 hour
