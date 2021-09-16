@@ -3,7 +3,7 @@ CanonifyURLs=true
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "STP Containers on AWS - Labs"
+title = "Well-Architected Framework Workshop"
 theme = "learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
@@ -16,8 +16,8 @@ pygmentsStyle = "monokai"
 googleAnalytics = ""
 
 [params]
-  description = "Building and deploying a containerized application with AWS ECS & EKS"
-  author = "Gilberto Canales"
+  description = "Well-Architected Framework Training Labs"
+  author = "Gilberto Canales, Diana Diaz"
   disableBreadcrumb = false
   disableNextPrev = false
   themeVariant = "aws"

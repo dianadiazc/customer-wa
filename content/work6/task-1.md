@@ -1,5 +1,5 @@
 +++ 
-title = "Task 1: Establishing Configuration Controls using AWS Config and IAM" 
+title = "Task 1: Enabling AWS Config" 
 chapter = false 
 weight = 1 
 +++
@@ -24,9 +24,7 @@ Before you can start monitoring your AWS resources for compliance, you must enab
 
 1. For **Role name** select **ConfigServiceRole**.
 
-1. In the **Delivery method** section, select the option **Choose a bucket from your account**.
-
-1. For **S3 bucket name** select **config-bucket-lab5-xxxxxx**.
+1. In the **Delivery method** section, for **S3 bucket name**, append a few random numbers.
 
 1. Choose <span style="background-color:#ec7211; font-weight:bold; font-size:90%; color:white; position:relative; top:-1px; padding-top:3px; padding-bottom:3px; padding-left:10px; padding-right:10px;white-space: nowrap">Next</span>.
 
