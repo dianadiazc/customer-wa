@@ -1,51 +1,39 @@
 +++ 
-title = "Task 1: Enable QuickSight" 
+title = "Task 1: Establishing Configuration Controls using AWS Config and IAM" 
 chapter = false 
-weight = 2 
+weight = 1 
 +++
 
-Since you will be using QuickSight thru this lab, the first step will be enable the service.
+Before you can start monitoring your AWS resources for compliance, you must enable AWS Config in your environment. AWS Config provides a detailed view of the configuration of AWS resources in your account. Additionally, you can observe how resources relate to one another, past configurations, and how the relationships change over time.
 
-1. In the console, go to **QuickSight** service.
+### Set up AWS Config
 
-    <img src="../images/goto-quicksight.png" alt="drawing" width="600"/>
+1. Open the **AWS Config Console** by selecting <span style="background-color:#232f3e; font-weight:bold; font-size:90%; color:white; position:relative; top:-1px; padding-top:3px; padding-bottom:3px; padding-left:10px; padding-right:10px;">Services <i class="fas fa-angle-down"></i></span> and typing `config` in the filter box.
 
-1. Click on **Sign up for QuickSight**.
+1. Choose **Config**.
 
-    <img src="../images/qs-signup.png" alt="drawing" width="600"/>
+1. Choose <span style="background-color:#ec7211; font-weight:bold; font-size:90%; color:white; position:relative; top:-1px; padding-top:3px; padding-bottom:3px; padding-left:10px; padding-right:10px;white-space: nowrap">Get started</span>.
 
-1. For this task we will enable the Standard version, click on the radio button next to the **Standard** version.
+1. In the **General Settings** section, for **Resource types to record**, choose **Record specific resource types**.
 
-1. Scroll down the page and click on **Continue**.
+1. Within **Resource category**, choose **AWS resources**.
 
-1. In the next page change the QuickSight region, select **US West (Oregon)**
+1. Within **Resource type**, select **AWS EC2 Instance**. The dropdown will display **Multiple Selected**.
 
-    <img src="../images/qs-oregon.png" alt="drawing" width="350"/>
+1. In the **AWS Config role** section, select the option **Choose a role from your account**.
 
-1. A warning will show up **Changing this may change some sections**. Click **OK**.
+1. For **Role name** select **ConfigServiceRole**.
 
-1. In the next page, under **Account info** set a **QuickSight account name** and a **Notification email address**. An account name can only contain characters (A-Za-z), digits (0-9), dashes (-) and no blank spaces.
+1. In the **Delivery method** section, select the option **Choose a bucket from your account**.
 
-    <img src="../images/qs-account-info.png" alt="drawing" width="350"/>
+1. For **S3 bucket name** select **config-bucket-lab5-xxxxxx**.
 
-1. Remember the CUR dataset is stored in an S3 bucket, you need to provide permissions to QuickSight to access the dataset. Click the *checkbox* next to **Amazon S3**.
+1. Choose <span style="background-color:#ec7211; font-weight:bold; font-size:90%; color:white; position:relative; top:-1px; padding-top:3px; padding-bottom:3px; padding-left:10px; padding-right:10px;white-space: nowrap">Next</span>.
 
-    <img src="../images/qs-clicks3.png" alt="drawing" width="600"/>
+1. No changes on this page, choose <span style="background-color:#ec7211; font-weight:bold; font-size:90%; color:white; position:relative; top:-1px; padding-top:3px; padding-bottom:3px; padding-left:10px; padding-right:10px;white-space: nowrap">Next</span>.
 
-1. In the **Select Amazon S3 buckets** window, mark the checkbox next to the bucket `wa-cur-xxxxxxxxxx` and give write  permissions fot Athena Workgroup.
+1. Choose <span style="background-color:#ec7211; font-weight:bold; font-size:90%; color:white; position:relative; top:-1px; padding-top:3px; padding-bottom:3px; padding-left:10px; padding-right:10px;white-space: nowrap">Confirm</span>.
 
-    <img src="../images/qs-select-bucket.png" alt="drawing" width="600"/>
+1. You may close the "Welcome to AWS Config" window
 
-1. Click **Finish**.
-
-1. Click **Finish** again.
-
-1. You will see your QuickSight account being created.
-
-    <img src="../images/qs-creation.png" alt="drawing" width="800"/>
-
-1. After a few seconds the account will be created, click on **Go to Amazon QuickSight**
-
-    <img src="../images/qs-congrats.png" alt="drawing" width="450"/>
-
-1. You will be logged in your QuickSight account, in the **What’s New in Amazon QuickSight** window you could see important information regarding service enhacements, fell free to review them. Once done, click **Close** at the bottom of the window.
+**NOTE:** A warning message may appear at the top of the page requesting that you update the IAM Policy used by AWS Config. This warning can be ignored for purposes of this lab.

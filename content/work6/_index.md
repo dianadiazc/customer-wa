@@ -22,25 +22,17 @@ You will use a Cost and Usage Report (CUR) already prepared for you as part of t
 
 ## Services
 
-Amazon QuickSight
-
-## Prerequisites
-
-You will run this Lab at an AWS sponsored workshop then you will be provided with an AWS Account to perform all the tasks in the following section. You do not need to run previous Labs to complete tasks in this Lab. 
+AWS Config, AWS Identity and Access Management (IAM)
 
 ## Duration
 
-Estimated time to complete: 40 min
+Estimated time to complete: 45 min
 
 ## Tasks
 
-0. [Cost & Usage Report Configuration](https://main.d2azidedm760yt.amplifyapp.com/work6/task-0/)
+1. Establishing Configuration Controls using AWS Config and IAM
 
-1. [Enable Amazon QuickSight](https://main.d2azidedm760yt.amplifyapp.com/work6/task-1/)
-
-2. [Adding a data source in Amazon QuickSight](https://main.d2azidedm760yt.amplifyapp.com/work6/task-2/)
-
-3. [Creating visuals in Amazon QuickSight](https://main.d2azidedm760yt.amplifyapp.com/work6/task-3/)
+2. Enable AWS Config
 
 ## Architecture
 
@@ -48,8 +40,5 @@ After completing tasks above, you will have the following architecture.
 
 <img src="images/target-up.png" alt="drawing" width="1200"/>
 
-{{% notice tip %}}
-Reference: https://docs.aws.amazon.com/cur/latest/userguide/data-dictionary.html
-https://pages.awscloud.com/rs/112-TZM-766/images/2019_0906-ENT_Examples.pdf
-{{% /notice %}}
+
 
