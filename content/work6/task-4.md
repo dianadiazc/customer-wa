@@ -6,7 +6,7 @@ weight = 4
 
 Enabling AWS Config will allow you to detect and remediate non-compliant resources in a reactive manner. Now, you will use AWS Identity and Access Management to put proactive controls in place that prevent users from deploying non-compliant resources. With IAM, you can grant different permissions, to different people, for different resources. You will use the capabilities of IAM to ensure that your AP Developers can launch new EC2 instances in the Development environment as needed, but only if they select the appropriate instance type, and configure the required tags at launch to be compliant with your organization’s standards.
 
-### Task 3.1: Review AWS IAM User Group and Policy
+### Task 4.1: Review AWS IAM User Group and Policy
 
 To efficiently manage multiple users that perform the same job duties as one, IAM Groups are used. They collectively administer permissions for all users that are members of that group.
 
@@ -95,7 +95,7 @@ This policy statement allows users in this group to launch an EC2 instance, so l
 
 8. Choose the **Cancel** link at the bottom of the pop-up window.
 
-### Task 3.2: Add developer1 to the DeveloperGroup Group
+### Task 4.2: Add developer1 to the DeveloperGroup Group
 
 Now that you have reviewed the user group and inline policy, you will add the user awsstudent to the group. This will allow the user to create EC2 instances, so long as they are compliant with the policy conditions.
 
@@ -113,7 +113,7 @@ Now that you have reviewed the user group and inline policy, you will add the us
 
 **Note:** You will complete the rest of the lab as `developer1`
 
-### Task 3.3: Verify Preventative Controls
+### Task 4.3: Verify Preventative Controls
 
 With `developer1` now belonging to the DeveloperGroup group, you will want to confirm that the inline policy is restricting permissions as intended.
 
