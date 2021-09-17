@@ -1,5 +1,5 @@
 +++ 
-title = "Task 1: Enabling AWS Config" 
+title = "Task 1: Enable AWS Config" 
 chapter = false 
 weight = 1 
 +++

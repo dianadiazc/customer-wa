@@ -11,14 +11,13 @@ The Cost Optimization pillar includes the ability to run systems to deliver busi
 <img src="images/cost.png" alt="drawing" width="150"/>
 
 {{% notice note %}}
-**AnyCompany** would like to have a clear visibility about costs and usage for the AWS Services. They would like to use a flexible tool for creating their own dashboards according to their needs. They understand that they need a new way of analyzing expenditures to make informed decisions about cost tradeoffs.
+In order to control costs, **AnyCompany** would like to implement some controls to avoid people to launch big EC2 intances or with optimized resources, especially for non-production environments. 
 {{% /notice %}}
 
 ## Objective
 
-This lab will guide you through the steps to visualize the cost and usage of AWS services in an account using Amazon QuickSight. This kind of implementation will provide cost and usage awareness, measuring the business output of the workload and the costs associated with delivering it, which is fundamental according to the **Measure overall efficiency** design principle. 
+This lab will guide you through the steps to use AWS Config to enforce tagging for EC2 instances and instance type standardization for non-production environments. The skills you learn will help you control your cost and usage in alignment with the business requirements. You will pay only for the computing resources you consume and need, which is fundamental according to the **Adopt a consumption model** design principle. 
 
-You will use a Cost and Usage Report (CUR) already prepared for you as part of this lab environment and you will use QuickSight to create visuals that will help you create costs analysis.
 
 ## Services
 
@@ -26,13 +25,17 @@ AWS Config, AWS Identity and Access Management (IAM)
 
 ## Duration
 
-Estimated time to complete: 45 min
+Estimated time to complete: 40 min
 
 ## Tasks
 
-1. Establishing Configuration Controls using AWS Config and IAM
+1. Enable AWS Config
 
-2. Enable AWS Config
+2. Create AWS Config Rules
+
+3. Review and Remediate AWS Config findings
+
+4. Enable Preventative Controls for Compliance
 
 ## Architecture
 

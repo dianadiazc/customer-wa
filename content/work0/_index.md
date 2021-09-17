@@ -11,7 +11,7 @@ These labs are designed *to be completed in sequence*, and the full set of instr
 
 ## The context
 
-You work for **AnyCompany**, a retail business. One of the main apps for the company is a *product catalog;* a web application recently migrated to the AWS Cloud from the on-premises environment. Even though the application is functional, it is crucial to have an architecture with best practices applied, because the business is growing. As part of the Well-Architected practitioners team, you are looking for an architecture that meets the new performance requirements, mitigates risks, and saves money. Automation is also a fundamental part of the solution. 
+You are a Solutions Architect working for **AnyCompany**, a retail business. One of the main apps for the company is a *product catalog;* a web application recently migrated to the AWS Cloud from the on-premises environment. Even though the application is functional, it is crucial to have an architecture with best practices applied, because the business is growing. As part of the Well-Architected practitioners team, you are looking for an architecture that meets the new performance requirements, mitigates risks, and saves money. Automation is also a fundamental part of the solution. 
 
 The following is the initial architecture. Your mission is to improve upon it by applying some of the Well-Architected principles, according to the company’s needs.
 
@@ -25,7 +25,7 @@ You proposed doing a Well-Architected Framework Review (WAFR) of the application
 2.	A highly available architecture is required for the product catalog application.
 3.	Security is a top priority. The more insights available related to this topic, the better.
 4.	They are not sure about the decision that they made when they chose a t2.micro instance to run the application. Performance is something that they do not want to sacrifice. AnyCompany people want to do some stress tests for the application, especially because they are expecting an increase in the demand on the application in the near future.
-5.	Cost matters. Other teams at AnyCompany are testing other apps, and have had some users launch EC2 instances with optimized resources, when they are not needed. This situation has increased the monthly bill. Therefore, some controls should be implemented in order to avoid this issue in the future. 
+5.	Cost matters. Some applications are not using approved instance types in accordance with AnyCompany’s architecture standard. This has been driving unnecessary cost due to over-provisioned resources in non-production environment. 
 
 The information above is your starting point to help enhancing the architecture and achieving organization objectives. You may identify more opportunities for improvement in this architecture but, for the purposes of the workshop, just focus on these findings.
 

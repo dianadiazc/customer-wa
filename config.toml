@@ -46,7 +46,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.en]
-title = "Welcome to STP Containers on AWS - Labs"
+title = "Welcome to Well-Architected Training - Labs"
 weight = 1
 languageName = "English"
 
