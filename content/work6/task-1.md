@@ -24,7 +24,7 @@ Before you can start monitoring your AWS resources for compliance, you must enab
 
 1. For **Role name** select **ConfigServiceRole**.
 
-1. In the **Delivery method** section, for **S3 bucket name**, append a few random numbers.
+1. In the **Delivery method** section, select **Choose a bucket from your account**. For **S3 bucket name**, select the bucket starting with "config-bucket-lab*".
 
 1. Choose <span style="background-color:#ec7211; font-weight:bold; font-size:90%; color:white; position:relative; top:-1px; padding-top:3px; padding-bottom:3px; padding-left:10px; padding-right:10px;white-space: nowrap">Next</span>.
 

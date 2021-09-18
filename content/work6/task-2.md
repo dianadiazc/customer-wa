@@ -28,7 +28,7 @@ First, you will create a rule that confirms required tags populated with appropr
 
   - Remove all values from **Resources** field except for **AWS EC2 Instance**.
 
-    (**NOTE:** In case you accidentally deleted **AWS EC" Instance** resource from the list. You could manually add it from the **Resource type** combo menu)
+    (**NOTE:** In case you accidentally deleted **AWS EC2 Instance** resource from the list. You could manually add it from the **Resource type** combo menu)
 
   - For **Parameters** enter the following:
 

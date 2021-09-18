@@ -16,7 +16,7 @@ pygmentsStyle = "monokai"
 googleAnalytics = ""
 
 [params]
-  description = "Well-Architected Framework Training Labs"
+  description = "Well-Architected Framework Training - Labs"
   author = "Gilberto Canales, Diana Diaz"
   disableBreadcrumb = false
   disableNextPrev = false
